@@ -7,8 +7,8 @@
 """
 
 """
-import Gym as Gym
+import gym
 
 
-class Environment(Gym.Environment):
+class Environment(gym.Environment):
     pass
