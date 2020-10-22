@@ -35,12 +35,12 @@ class Environment(gym.Env):
         self.load_data = load_data
         self.line_data = line_data
         self.max_action = get_max_number(self.n_nodes)
-
+        self.reward_range = spaces.Box(np.array(0), np.array(100))
         self.action_space = spaces.Discrete(self.max_action)
 
         # (sum_power_assigned, sum_status, sum_priority) : defines state
         #  implement value-function approximation to summarize node information
-        self.observation_space = spaces.Box(np.array((-max_capacity, 0, 0)), np.array((max_capacity, max_capacity, max_capacity)))
+        self.observation_space = spaces.Box(np.array((0, 0, 0)), np.array((max_capacity, max_capacity, max_capacity)))
 
         self.done = False
 
