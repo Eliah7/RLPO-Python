@@ -9,7 +9,9 @@
 """
 
 from unittest import TestCase
+from src.main.env.environment import Environment
 
 class TestEnvironment(TestCase):
     def testCreateEnvironment(self):
+        self.environment = Environment(3000)
         pass
