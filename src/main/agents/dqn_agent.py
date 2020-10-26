@@ -16,7 +16,7 @@ from src.main.env.environment import Environment
 if __name__ == '__main__':
     env = DummyVecEnv([lambda: Environment(3000)])
 
-    model = DQN( CnnPolicy, env, verbose=1)
+    model = DQN(MlpPolicy, env, verbose=1)
     model.learn(total_timesteps=25000)
 
     obs = env.reset()

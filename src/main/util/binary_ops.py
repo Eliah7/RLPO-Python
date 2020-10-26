@@ -13,11 +13,14 @@ def binary_str_to_int(bin_str):
     return int(bin_str, 2)
 
 def digit_count_to_binary_str(count):
-    binary_str = ''
-    for i in np.ones(shape=[count], dtype=np.int):
-        binary_str += str(i)
+    # binary_str = ''
+    #
+    # for i in np.ones(shape=[count], dtype=np.int):
+    #     binary_str += str(i)
+    #
+    # return binary_str
+    return str(np.ones(count, dtype=np.int))[1:-1].replace(" ", "")
 
-    return binary_str
 
 def get_max_number(count):
     return int(digit_count_to_binary_str(count), 2)

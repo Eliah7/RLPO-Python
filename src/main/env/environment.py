@@ -35,12 +35,12 @@ class Environment(gym.Env):
         self.load_data = load_data
         self.line_data = line_data
         self.max_action = get_max_number(self.n_nodes)
-        self.reward_range = spaces.Box(np.array(0), np.array(100))
+        self.reward_range = spaces.Box(low=0, high=1000, shape=(1,)) #spaces.Box(np.array(0), np.array(100))
         self.action_space = spaces.Discrete(self.max_action)
 
         # (sum_power_assigned, sum_status, sum_priority) : defines state
         #  implement value-function approximation to summarize node information
-        self.observation_space = spaces.Box(np.array((0, 0, 0)), np.array((max_capacity, max_capacity, max_capacity)))
+        self.observation_space = spaces.Box(np.array((-max_capacity, -max_capacity, -max_capacity)), np.array((max_capacity, max_capacity, max_capacity)))
 
         self.done = False
 
@@ -54,14 +54,16 @@ class Environment(gym.Env):
         obs = self.get_observation(action)
         reward = self.reward()
 
-        if self.get_remaining_power(self.max_capacity, self.load_data) > 0 :
-            self.done = True
-        elif self.power_assigned() > self.max_capacity:
-            self.done = True
-        else:
-            self.done = False
+        self.done = True
 
-        return obs, reward, self.done, {}
+        # if self.get_remaining_power(self.max_capacity, self.load_data) > 0 :
+        #     self.done = True
+        # elif self.power_assigned() > self.max_capacity:
+        #     self.done = True
+        # else:
+        #     self.done = False
+
+        return obs, reward, True, {}
 
     def reset(self):
         # Reset the state of the environment to an initial state
@@ -89,6 +91,8 @@ class Environment(gym.Env):
 
 
     def act(self, action_str):
+
+        
         for action in range(self.n_nodes):
             self.load_data[:, 4][action] = int(action_str[action])
 
