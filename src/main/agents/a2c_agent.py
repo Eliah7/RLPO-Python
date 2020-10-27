@@ -28,11 +28,11 @@ if __name__ == '__main__':
 
     # evaluate before training
     _, all_rewards = evaluate(model)
-    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training")
+    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - A2C")
 
     model.learn(total_timesteps=20000)
 
     # evaluate after training
     _, all_rewards = evaluate(model)
 
-    plot_moving_avg(np.array(all_rewards), title="Running Average reward after training")
+    plot_moving_avg(np.array(all_rewards), title="Running Average reward after training - A2C")

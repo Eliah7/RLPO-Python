@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/util/graph_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/util/model_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/util/binary_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/binary_ops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/binary_ops_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/binary_ops_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,16 +49,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph_utils.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graph_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#154#185#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Running Average reward after training.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="Running Average reward before training.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="pyplot.py" pinned="false" current-in-tab="false">
@@ -376,22 +380,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.4812121" />
-      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.5084459" side_tool="true" visible="true" weight="0.38483548" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.5085537" side_tool="true" visible="true" weight="0.38483548" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.28242424" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.28242424" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928468" weight="0.0569697" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32848486" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22060606" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22060606" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19170243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49155405" visible="true" weight="0.38483548" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49144635" visible="true" weight="0.38483548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -764,12 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -788,13 +785,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#154#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

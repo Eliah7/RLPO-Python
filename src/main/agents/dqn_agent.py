@@ -10,17 +10,27 @@
 
 from stable_baselines.common.vec_env import DummyVecEnv
 from stable_baselines.deepq.policies import MlpPolicy, CnnPolicy
-from stable_baselines import DQN
+# from stable_baselines.common.policies import MlpPolicy
+from stable_baselines import DQN, A2C
 from src.main.env.environment import Environment
+from stable_baselines.bench import Monitor
+import numpy as np
+from src.main.util.graph_utils import *
+from src.main.util.model_utils import *
+
 
 if __name__ == '__main__':
     env = DummyVecEnv([lambda: Environment(3000)])
-
+    # env = Monitor(env, "./logs")
     model = DQN(MlpPolicy, env, verbose=1)
-    model.learn(total_timesteps=25000)
 
-    obs = env.reset()
-    while True:
-        action, _states = model.predict(obs)
-        obs, rewards, dones, info = env.step(action)
-        print(rewards)
+    # evaluate before training
+    _, all_rewards = evaluate(model)
+    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")
+
+    model.learn(total_timesteps=20000)
+
+    # evaluate after training
+    _, all_rewards = evaluate(model)
+
+    plot_moving_avg(np.array(all_rewards), title="Running Average reward after training - DQN")
