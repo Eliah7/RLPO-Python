@@ -20,7 +20,7 @@ from src.main.util.model_utils import *
 
 
 if __name__ == '__main__':
-    env = DummyVecEnv([lambda: Environment(3000)])
+    env = DummyVecEnv([lambda: Environment(1000)])
     # env = Monitor(env, "./logs")
     model = DQN(MlpPolicy, env, verbose=1)
 
@@ -32,5 +32,4 @@ if __name__ == '__main__':
 
     # evaluate after training
     _, all_rewards = evaluate(model)
-
     plot_moving_avg(np.array(all_rewards), title="Running Average reward after training - DQN")

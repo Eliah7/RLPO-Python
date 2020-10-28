@@ -34,6 +34,7 @@ class Environment(gym.Env):
         self.n_nodes = n_nodes
         self.load_data = load_data
         self.line_data = line_data
+        self.num_actions = 0
         self.max_action = get_max_number(self.n_nodes)
         self.reward_range = spaces.Box(low=0, high=1000, shape=(1,)) #spaces.Box(np.array(0), np.array(100))
         self.action_space = spaces.Discrete(self.n_nodes)
@@ -56,19 +57,22 @@ class Environment(gym.Env):
 
         self.done = True
 
-        # if self.get_remaining_power(self.max_capacity, self.load_data) > 0 :
-        #     self.done = True
-        # elif self.power_assigned() > self.max_capacity:
-        #     self.done = True
-        # else:
-        #     self.done = False
+        if self.power_assigned() >= self.max_capacity:
+            self.done = True
+        else:
+            if self.num_actions == 10:
+                self.done = True
+            else:
+                self.done = False
+                self.num_actions += 1
 
-        return obs, reward, True, {}
+        return obs, reward, self.done, {}
 
     def reset(self):
         # Reset the state of the environment to an initial state
         self.load_data = loadData
         self.line_data = lineData
+        self.num_actions = 0
         # self.remain_power = self.get_remaining_power(self.max_capacity, self.load_data)
         # self.power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 4])
         self.done = False
@@ -91,8 +95,6 @@ class Environment(gym.Env):
 
 
     def act(self, action_str):
-
-        
         for action in range(self.n_nodes):
             self.load_data[:, 4][action] = int(action_str[action])
 

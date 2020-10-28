@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - A2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - A2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/random_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/random_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/binary_ops_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/binary_ops_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,23 +23,23 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_environment_tests_TestEnvironment_testCreateEnvironment.coverage" NAME="Unittests for environment_tests.TestEnvironment.testCreateEnvironment Coverage Results" MODIFIED="1603365570784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$a2c_agent.coverage" NAME="a2c_agent Coverage Results" MODIFIED="1603816548219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$a2c_agent.coverage" NAME="a2c_agent Coverage Results" MODIFIED="1603889502743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_binary_str_to_int.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_binary_str_to_int Coverage Results" MODIFIED="1603372007685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_max_number_for_binary_digit_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count Coverage Results" MODIFIED="1603809685552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps Coverage Results" MODIFIED="1603371989804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_bin_str_with_max_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_bin_str_with_max_count Coverage Results" MODIFIED="1603374249781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1603716542112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str Coverage Results" MODIFIED="1603810495885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str Coverage Results" MODIFIED="1603817975937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps Coverage Results" MODIFIED="1603817979498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1603889431744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$random_agent.coverage" NAME="random_agent Coverage Results" MODIFIED="1603810565711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$ppo2_agent.coverage" NAME="ppo2_agent Coverage Results" MODIFIED="1603715981359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$ppo2_agent.coverage" NAME="ppo2_agent Coverage Results" MODIFIED="1603887822059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="environment.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="63" selection-end-column="31" />
+            <state relative-caret-position="452">
+              <caret line="114" column="66" lean-forward="true" selection-start-line="114" selection-start-column="66" selection-end-line="114" selection-end-column="66" />
               <folding>
                 <element signature="e#153#163#0" expanded="true" />
               </folding>
@@ -37,10 +47,43 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="dqn_agent.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding>
+                <element signature="e#154#209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ppo2_agent.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <folding>
+                <element signature="e#154#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_agent.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/random_agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="binary_ops.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="510">
               <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#153#171#0" expanded="true" />
@@ -52,42 +95,8 @@
       <file leaf-file-name="graph_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#154#185#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward after training.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward before training.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="pyplot.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.7/site-packages/matplotlib/pyplot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="720" column="4" selection-start-line="720" selection-start-column="4" selection-end-line="720" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-              <folding>
-                <element signature="e#156#211#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -95,8 +104,38 @@
       <file leaf-file-name="model_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binary_ops_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/binary_ops_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding>
+                <element signature="e#156#211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,15 +162,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/env/data.py" />
         <option value="$PROJECT_DIR$/src/tests/environment_tests.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/random_agent.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/dqn_agent.py" />
-        <option value="$PROJECT_DIR$/src/tests/binary_ops_test.py" />
-        <option value="$PROJECT_DIR$/src/main/env/environment.py" />
         <option value="$PROJECT_DIR$/src/main/util/binary_ops.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
         <option value="$PROJECT_DIR$/src/main/util/model_utils.py" />
         <option value="$PROJECT_DIR$/src/main/util/graph_utils.py" />
+        <option value="$PROJECT_DIR$/src/tests/binary_ops_test.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/random_agent.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/dqn_agent.py" />
+        <option value="$PROJECT_DIR$/src/main/env/environment.py" />
       </list>
     </option>
   </component>
@@ -260,7 +299,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="random_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ppo2_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,11 +312,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/random_agent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Unittests for binary_ops_test.TestBinaryOps" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="RLPO-Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;binary_ops_test.TestBinaryOps&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="RLPO-Python" />
@@ -293,34 +346,20 @@
       <option name="_new_target" value="&quot;binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="RLPO-Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
     <list>
-      <item itemvalue="Python.random_agent" />
       <item itemvalue="Python.dqn_agent" />
       <item itemvalue="Python.a2c_agent" />
       <item itemvalue="Python tests.Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" />
-      <item itemvalue="Python tests.Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count" />
+      <item itemvalue="Python tests.Unittests for binary_ops_test.TestBinaryOps" />
+      <item itemvalue="Python.ppo2_agent" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.a2c_agent" />
-        <item itemvalue="Python.random_agent" />
-        <item itemvalue="Python tests.Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" />
-        <item itemvalue="Python tests.Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count" />
         <item itemvalue="Python.dqn_agent" />
+        <item itemvalue="Python.ppo2_agent" />
+        <item itemvalue="Python tests.Unittests for binary_ops_test.TestBinaryOps" />
+        <item itemvalue="Python tests.Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" />
       </list>
     </recent_temporary>
   </component>
@@ -338,15 +377,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str - 2020.10.26 at 17h 55m 01s.xml">
-      <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str - 2020.10.26 at 18h 01m 01s.xml">
-      <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str - 2020.10.26 at 18h 01m 17s.xml">
-      <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str - 2020.10.26 at 18h 01m 49s.xml">
       <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" configurationId="tests" />
     </history-entry>
@@ -368,6 +398,15 @@
     <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str - 2020.10.27 at 17h 56m 15s.xml">
       <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str - 2020.10.27 at 19h 59m 31s.xml">
+      <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str - 2020.10.27 at 19h 59m 36s.xml">
+      <configuration name="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_binary_ops_test_TestBinaryOps - 2020.10.27 at 19h 59m 39s.xml">
+      <configuration name="Unittests for binary_ops_test.TestBinaryOps" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,21 +419,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.4812121" />
-      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.5085537" side_tool="true" visible="true" weight="0.38483548" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.5101351" side_tool="true" visible="true" weight="0.27968526" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.28242424" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.28242424" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928468" weight="0.0569697" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32848486" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22060606" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19170243" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22060606" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1874106" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49144635" visible="true" weight="0.38483548" />
+      <window_info active="true" anchor="right" id="SciView" order="4" sideWeight="0.48986486" visible="true" weight="0.27968526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -405,6 +443,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,37 +469,68 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
+    <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="975">
+          <caret line="69" column="33" lean-forward="true" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+          <folding>
+            <element signature="e#153#163#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
+    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="510">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#154#209#0" expanded="true" />
+            <element signature="e#153#171#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/binary_ops_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="420">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#156#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
+    <entry file="file://$PROJECT_DIR$/src/tests/environment_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-          <folding>
-            <element signature="e#153#163#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -601,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/environment_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/ppo2/ppo2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -619,20 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/random_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -692,30 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="81" column="2" lean-forward="true" selection-start-line="10" selection-end-line="81" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/binary_ops_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#154#209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.7/site-packages/gym/spaces/discrete.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -723,40 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-143">
           <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="e#153#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#153#171#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,37 +763,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/environment_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/binary_ops_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#153#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="e#154#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/random_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="244">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding>
             <element signature="e#156#211#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/Running Average reward after training.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/Running Average reward before training.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
+    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="437">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding>
-            <element signature="e#154#185#0" expanded="true" />
+            <element signature="e#154#209#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="114" column="66" lean-forward="true" selection-start-line="114" selection-start-column="66" selection-end-line="114" selection-end-column="66" />
+          <folding>
+            <element signature="e#153#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

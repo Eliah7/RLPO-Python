@@ -12,7 +12,7 @@ import gym
 from src.main.env.environment import Environment
 
 if __name__ == '__main__':
-    env = Environment(3000)
+    env = Environment(1000)
 
     for i_episode in range(20):
         observation = env.reset()

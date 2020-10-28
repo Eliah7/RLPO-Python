@@ -22,7 +22,7 @@ from src.main.util.model_utils import *
 
 
 if __name__ == '__main__':
-    env = DummyVecEnv([lambda: Environment(3000)])
+    env = DummyVecEnv([lambda: Environment(200)])
     # env = Monitor(env, "./logs")
     model = A2C(MlpPolicy, env, verbose=1)
 
@@ -34,5 +34,6 @@ if __name__ == '__main__':
 
     # evaluate after training
     _, all_rewards = evaluate(model)
+    print(all_rewards)
 
     plot_moving_avg(np.array(all_rewards), title="Running Average reward after training - A2C")

@@ -14,18 +14,22 @@ import datetime as dt
 from stable_baselines.common.policies import MlpPolicy
 from stable_baselines.common.vec_env import DummyVecEnv
 from stable_baselines import PPO2
-import matplotlib .pyplot as plt
+from src.main.util.graph_utils import *
+from src.main.util.model_utils import *
 from src.main.env.environment import Environment
 
 if __name__ == '__main__':
-    # The algorithms require a vectorized environment to run
-    env = DummyVecEnv([lambda: Environment(3000)])
+    env = DummyVecEnv([lambda: Environment(1000)])
+    # env = Monitor(env, "./logs")
     model = PPO2(MlpPolicy, env, verbose=1)
-    model.learn(total_timesteps=20000)
-    obs = env.reset()
 
-    for i in range(2000):
-      action, _states = model.predict(obs)
-      obs, rewards, done, info = env.step(action)
-      print(rewards)
-      env.render()
+    # evaluate before training
+    _, all_rewards = evaluate(model)
+    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - PPO2")
+
+    model.learn(total_timesteps=20000)
+
+    # evaluate after training
+    _, all_rewards = evaluate(model)
+
+    plot_moving_avg(np.array(all_rewards), title="Running Average reward after training - PPO2")

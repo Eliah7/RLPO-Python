@@ -17,11 +17,11 @@ class TestBinaryOps(TestCase):
         # self.assertEqual(binary_str_to_int('11111111'), 255)
 
     def test_digit_count_to_binary_str(self):
-        self.assertEqual(digit_count_to_binary_str(386888567), '11111111')
+        self.assertEqual(digit_count_to_binary_str(8), '11111111')
         self.assertEqual(digit_count_to_binary_str(3), '111')
 
     def test_get_max_number_for_binary_digit_count(self):
-        self.assertEqual(get_max_number(3868885858568) ,7)
+        self.assertEqual(get_max_number(3) ,7)
         self.assertEqual(get_max_number(4), 15)
 
     def test_get_bin_str_with_max_count(self):
