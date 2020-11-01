@@ -4,6 +4,7 @@
 # Enter feature description here
 
 # Scenario: # Enter scenario name here
+
 """
 
 """
@@ -15,8 +16,8 @@ if __name__ == '__main__':
         from jnius import autoclass
 
     except KeyError:
-        os.environ['JDK_HOME'] = "/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib"
-        os.environ['JAVA_HOME'] = "/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib"
+        os.environ['JDK_HOME'] = "/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home"
+        os.environ['JAVA_HOME'] = "/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home"
         from jnius import autoclass
 
     Stack = autoclass('java.util.Stack')
@@ -24,5 +25,6 @@ if __name__ == '__main__':
     stack.push('hello')
     stack.push('world')
 
-    stack.pop()  # --> 'world'
-    stack.pop()
+    print(stack.pop())  # --> 'world'
+    print(stack.pop())
+    autoclass('java.lang.System').out.println('Hello world')
