@@ -8,23 +8,47 @@
 """
 
 """
+from py4j.java_gateway import JavaGateway
+from src.main.env.environment import *
+
+def dlf_analyse(environment):
+    gateway = JavaGateway()
+    dlf_app = gateway.entry_point
+
+    line_data = get_java_line_data(environment.line_data, gateway)
+    load_data = get_java_load_data(environment.load_data, gateway)
+
+    dlf_app.setBusData(load_data)
+    dlf_app.setLineData(line_data)
+    dlf_app.setCentralBus(1)
+
+    return dlf_app.calculate()
+
+def get_java_line_data(line_data, gateway):
+    column_len = len(line_data)
+    row_len = len(line_data[0])
+
+    java_line_data = gateway.new_array(gateway.jvm.double, column_len, row_len)
+
+    for i in range(column_len):
+        for j in range(row_len):
+            java_line_data[i][j] = line_data[i][j]
+
+    return java_line_data
+
+def get_java_load_data(load_data, gateway):
+    column_len = len(load_data)
+    row_len = len(load_data[0])
+
+    java_load_data = gateway.new_array(gateway.jvm.double, column_len, row_len)
+
+    for i in range(column_len):
+        for j in range(row_len):
+            java_load_data[i][j] = load_data[i][j]
+
+    return java_load_data
 
 if __name__ == '__main__':
-    import os
+    env = Environment(3000)
+    print(dlf_analyse(env))
 
-    try:
-        from jnius import autoclass
-
-    except KeyError:
-        os.environ['JDK_HOME'] = "/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home"
-        os.environ['JAVA_HOME'] = "/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home"
-        from jnius import autoclass
-
-    Stack = autoclass('java.util.Stack')
-    stack = Stack()
-    stack.push('hello')
-    stack.push('world')
-
-    print(stack.pop())  # --> 'world'
-    print(stack.pop())
-    autoclass('java.lang.System').out.println('Hello world')

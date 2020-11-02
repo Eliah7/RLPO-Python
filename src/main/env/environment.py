@@ -12,7 +12,7 @@ from gym import spaces
 import numpy as np
 from .data import *
 from src.main.util.binary_ops import *
-
+from src.main.util.java_utils import dlf_analyse
 
 class Environment(gym.Env):
     """Custom Environment that follows gym interface"""
@@ -108,6 +108,8 @@ class Environment(gym.Env):
     def reward(self):
         status_reward = 1 - np.sum(self.load_data[:, 4] * self.load_data[:, 5]) ** 0.4 # positive rewards
         power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 4])  ** 0.4
+
+        print("=====> DLF Output: {}".format(dlf_analyse(self)))
 
         return status_reward * power_assigned
 
