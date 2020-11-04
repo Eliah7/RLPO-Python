@@ -11,12 +11,17 @@
 from py4j.java_gateway import JavaGateway
 from src.main.env.environment import *
 
-def dlf_analyse(environment):
+def dlf_analyse(env):
     gateway = JavaGateway()
     dlf_app = gateway.entry_point
 
-    line_data = get_java_line_data(environment.line_data, gateway)
-    load_data = get_java_load_data(environment.load_data, gateway)
+    # env.load_data[:, 1] = [0 if status== 0 else for status in env.load_data[:, 4]]
+    # for i in range(len(env.load_data[:, 1])):
+    #     if env.load_data[:, 4][i] == 0:
+    #         env.load_data[:, 1][i] = 0
+
+    line_data = get_java_line_data(env.line_data, gateway)
+    load_data = get_java_load_data(env.load_data, gateway)
 
     dlf_app.setBusData(load_data)
     dlf_app.setLineData(line_data)

@@ -108,8 +108,10 @@ class Environment(gym.Env):
     def reward(self):
         status_reward = 1 - np.sum(self.load_data[:, 4] * self.load_data[:, 5]) ** 0.4 # positive rewards
         power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 4])  ** 0.4
-
-        print("=====> DLF Output: {}".format(dlf_analyse(self)))
+        # dlf_results = dlf_analyse(self) ** 0.1
+        # #
+        # print("=====> DLF: {}".format(dlf_analyse(self)))
+        # print("=====> Reward : {}".format(status_reward * power_assigned))
 
         return status_reward * power_assigned
 
