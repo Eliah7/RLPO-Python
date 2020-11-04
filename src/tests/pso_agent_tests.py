@@ -16,5 +16,5 @@ class PSOAgentTests(TestCase):
    def test_create_agent(self):
        env = Environment(3000)
        pso_agent = PSOAgent(env=env)
-       pso_agent.predict(observation=3)
+       print(pso_agent.predict(observation=3))
        pass

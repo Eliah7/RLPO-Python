@@ -10,6 +10,7 @@
 
 from py4j.java_gateway import JavaGateway, GatewayParameters
 from src.main.util.config import *
+from src.main.env.environment import *
 
 class PSOAgent:
     """
@@ -17,50 +18,45 @@ class PSOAgent:
 
     """
 
-    def __init__(self, env):
+    def __init__(self, env, num_iterations=100):
         self.gateway = JavaGateway(gateway_parameters=GatewayParameters(port=DEFAULT_PSO_AGENT_PORT))
         self.pso_app = self.gateway.entry_point
         self.env = env
-
-        # print(self.gateway.jvm.ac.udsm.dca.bpso.Item)
-        # print(self.gateway.jvm.ac.udsm.dca.bpso.Problem)
-        # print(self.pso_app.printInt())
+        self.num_iterations = num_iterations
 
     def predict(self, observation):
-        items = self.gateway.new_array(self.gateway.jvm.ac.udsm.dca.bpso.Item, 33)
+        nodes = self.env.load_data[:, 0]
+        power_values = self.env.load_data[:, 1]
 
-        java_values = [0.0, 500.0, 450.0, 1200.0, 300.0, 60.0, 1000.0, 200.0, 60.0, 60.0, 225.0, 600.0, 60.0, 600.0, 60.0, 60.0, 60.0, 450.0, 450.0, 900.0, 900.0,
-                     450.0, 90.0, 2100.0, 60.0, 60.0, 300.0, 1200.0, 200.0, 750.0, 210.0, 300.0, 300.0]
+        items = self.gateway.new_array(self.gateway.jvm.ac.udsm.dca.bpso.Item, len(nodes))
 
-        values = self.gateway.new_array(self.gateway.jvm.double, len(java_values))
+        values = self.gateway.new_array(self.gateway.jvm.double, len(nodes))
 
-        for i in range(len(java_values)):
-            values[i] = float(java_values[i])
+        for i in range(len(nodes)):
+            values[i] = float(nodes[i])
 
-        max_capacity = 15.0
+        weights = self.gateway.new_array(self.gateway.jvm.double, len(power_values))
 
-        java_weights = [0.0, 500.0, 450.0, 1200.0, 300.0, 60.0, 1000.0, 200.0, 60.0, 60.0, 225.0, 600.0, 60.0, 600.0,
-                       60.0, 60.0, 60.0, 450.0, 450.0, 900.0, 900.0,
-                       450.0, 90.0, 2100.0, 60.0, 60.0, 300.0, 1200.0, 200.0, 750.0, 210.0, 300.0, 300.0]
-
-        weights = self.gateway.new_array(self.gateway.jvm.double, len(java_weights))
-
-        for i in range(len(java_weights)):
-            weights[i] = float(java_weights[i])
+        for i in range(len(power_values)):
+            weights[i] = float(power_values[i])
 
         for i in range(len(items)):
             item = self.gateway.jvm.ac.udsm.dca.bpso.Item(values[i], weights[i])
             items[i] = item
 
-        problem = self.gateway.jvm.ac.udsm.dca.bpso.Problem(33, items, max_capacity)
-        pso_for_problem = self.gateway.jvm.ac.udsm.dca.bpso.PSO(33, problem, 100)
+        problem = self.gateway.jvm.ac.udsm.dca.bpso.Problem(len(nodes), items, float(self.env.max_capacity))
+        pso_for_problem = self.gateway.jvm.ac.udsm.dca.bpso.PSO(len(nodes), problem, self.num_iterations)
         result = pso_for_problem.solveForRL()
 
         result_str = ''
         for i in result:
-            result_str += '{} '.format(i)
+            result_str += '{}'.format(i)
 
-        print(result_str)
+        return binary_str_to_int(result_str)
+
+
+if __name__ == '__main__':
+    agent = PSOAgent(env=Environment(15))
 
 
 

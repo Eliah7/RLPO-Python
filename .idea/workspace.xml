@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/random_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/random_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/pso_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/pso_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/pso_agent_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/pso_agent_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,13 +18,13 @@
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_binary_str_to_int.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_binary_str_to_int Coverage Results" MODIFIED="1603372007685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_bin_str_with_max_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_bin_str_with_max_count Coverage Results" MODIFIED="1603374249781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str Coverage Results" MODIFIED="1603817975937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1604483822913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1604484145080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$random_agent.coverage" NAME="random_agent Coverage Results" MODIFIED="1603810565711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$ppo2_agent.coverage" NAME="ppo2_agent Coverage Results" MODIFIED="1604414840039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_environment_tests_TestEnvironment_testCreateEnvironment.coverage" NAME="Unittests for environment_tests.TestEnvironment.testCreateEnvironment Coverage Results" MODIFIED="1603365570784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$java_utils.coverage" NAME="java_utils Coverage Results" MODIFIED="1604414748789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/util" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$pso_agent_test.coverage" NAME="pso_agent_test Coverage Results" MODIFIED="1604475680181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent.coverage" NAME="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent Coverage Results" MODIFIED="1604483624015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$pso_agent_test.coverage" NAME="pso_agent_test Coverage Results" MODIFIED="1604484158756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent.coverage" NAME="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent Coverage Results" MODIFIED="1604485206330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_max_number_for_binary_digit_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count Coverage Results" MODIFIED="1603809685552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps Coverage Results" MODIFIED="1603817979498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
   </component>
@@ -37,8 +33,8 @@
       <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="103" column="53" lean-forward="true" selection-start-line="103" selection-start-column="53" selection-end-line="103" selection-end-column="53" />
+            <state relative-caret-position="180">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding>
                 <element signature="e#153#163#0" expanded="true" />
               </folding>
@@ -46,13 +42,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pso_agent.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pso_agent.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/agents/pso_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            <state relative-caret-position="142">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
               <folding>
-                <element signature="e#154#215#0" expanded="true" />
+                <element signature="e#154#214#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pso_agent_tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/pso_agent_tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <folding>
+                <element signature="e#153#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +78,7 @@
       <file leaf-file-name="ppo2_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="257">
               <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding>
                 <element signature="e#154#164#0" expanded="true" />
@@ -79,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="random_agent.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="random_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/agents/random_agent.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -88,35 +96,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="java_gateway.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.7/site-packages/py4j/java_gateway.py">
+      <file leaf-file-name="binary_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="1855" column="13" selection-start-line="1855" selection-start-column="13" selection-end-line="1855" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="java_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/util/java_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="47" column="58" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="58" />
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="21" />
               <folding>
-                <element signature="e#154#195#0" expanded="true" />
+                <element signature="e#153#171#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pso_agent_tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/pso_agent_tests.py">
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding>
-                <element signature="e#153#182#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-462">
+              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -175,12 +171,12 @@
         <option value="$PROJECT_DIR$/src/main/util/java_utils.py" />
         <option value="$PROJECT_DIR$/src/main/env/environment.py" />
         <option value="$PROJECT_DIR$/src/main/util/config.py" />
-        <option value="$PROJECT_DIR$/src/tests/pso_agent_tests.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/pso_agent.py" />
         <option value="$PROJECT_DIR$/src/main/agents/dqn_agent.py" />
         <option value="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" />
         <option value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
         <option value="$PROJECT_DIR$/src/main/agents/random_agent.py" />
+        <option value="$PROJECT_DIR$/src/tests/pso_agent_tests.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/pso_agent.py" />
       </list>
     </option>
   </component>
@@ -270,7 +266,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dqn_agent">
+  <component name="RunManager" selected="Python tests.Unittests for pso_agent_tests.PSOAgentTests.test_create_agent">
     <configuration name="a2c_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -386,8 +382,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dqn_agent" />
         <item itemvalue="Python tests.Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" />
+        <item itemvalue="Python.dqn_agent" />
         <item itemvalue="Python.ppo2_agent" />
         <item itemvalue="Python.a2c_agent" />
         <item itemvalue="Python.java_utils" />
@@ -408,34 +404,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 43m 06s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 12m 39s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 43m 40s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 31s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 44m 03s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 50s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 44m 09s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 54s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 48m 34s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 57s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 48m 41s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 09s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 51m 48s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 20s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 52m 13s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 35s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 53m 19s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 46s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 12h 53m 44s.xml">
+    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 20m 07s.xml">
       <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
     </history-entry>
   </component>
@@ -456,11 +452,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50143063" side_tool="true" weight="0.28242424" />
       <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.5135135" side_tool="true" visible="true" weight="0.27968526" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.28242424" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.28242424" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928468" weight="0.0569697" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32848486" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.22060606" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1788269" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1788269" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" sideWeight="0.4864865" visible="true" weight="0.27968526" />
@@ -671,16 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#153#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -720,13 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -772,32 +751,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="103" column="53" lean-forward="true" selection-start-line="103" selection-start-column="53" selection-end-line="103" selection-end-column="53" />
-          <folding>
-            <element signature="e#153#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/util/java_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="47" column="58" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="58" />
           <folding>
             <element signature="e#154#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/pso_agent_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="e#153#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -816,26 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <element signature="e#154#209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="e#154#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -846,20 +785,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/pso_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#154#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/random_agent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="e#154#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="e#154#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#153#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/pso_agent_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="e#153#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <element signature="e#153#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/pso_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="e#154#214#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
