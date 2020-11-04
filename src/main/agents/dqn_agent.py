@@ -9,12 +9,9 @@
 """
 
 from stable_baselines.common.vec_env import DummyVecEnv
-from stable_baselines.deepq.policies import MlpPolicy, CnnPolicy
-# from stable_baselines.common.policies import MlpPolicy
+from stable_baselines.deepq.policies import MlpPolicy
 from stable_baselines import DQN, A2C
 from src.main.env.environment import Environment
-from stable_baselines.bench import Monitor
-import numpy as np
 from src.main.util.graph_utils import *
 from src.main.util.model_utils import *
 

@@ -11,6 +11,8 @@
 from py4j.java_gateway import JavaGateway, GatewayParameters
 from src.main.util.config import *
 from src.main.env.environment import *
+from src.main.util.model_utils import *
+from src.main.util.graph_utils import *
 
 class PSOAgent:
     """
@@ -23,6 +25,9 @@ class PSOAgent:
         self.pso_app = self.gateway.entry_point
         self.env = env
         self.num_iterations = num_iterations
+
+    def get_env(self):
+        return self.env
 
     def predict(self, observation):
         nodes = self.env.load_data[:, 0]
@@ -52,11 +57,19 @@ class PSOAgent:
         for i in result:
             result_str += '{}'.format(i)
 
-        return binary_str_to_int(result_str)
+        return binary_str_to_int(result_str), []
 
 
 if __name__ == '__main__':
     agent = PSOAgent(env=Environment(15))
+
+    _, all_rewards = evaluate(agent)
+
+    print(all_rewards)
+
+    plot_moving_avg(np.array(all_rewards), title="Running Average - PSO ")
+
+
 
 
 
