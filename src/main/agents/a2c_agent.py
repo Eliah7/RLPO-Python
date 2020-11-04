@@ -22,7 +22,7 @@ from src.main.util.model_utils import *
 
 
 if __name__ == '__main__':
-    env = DummyVecEnv([lambda: Environment(200)])
+    env = DummyVecEnv([lambda: Environment(15)])
     # env = Monitor(env, "./logs")
     model = A2C(MlpPolicy, env, verbose=1)
 

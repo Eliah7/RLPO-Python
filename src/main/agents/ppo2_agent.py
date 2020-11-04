@@ -19,7 +19,7 @@ from src.main.util.model_utils import *
 from src.main.env.environment import Environment
 
 if __name__ == '__main__':
-    env = DummyVecEnv([lambda: Environment(1000)])
+    env = DummyVecEnv([lambda: Environment(15)])
     # env = Monitor(env, "./logs")
     model = PPO2(MlpPolicy, env, verbose=1)
 
