@@ -9,15 +9,15 @@
 """
 import numpy as np
 
-def evaluate(model, num_episodes=100):
+def evaluate(agent_model, num_episodes=100):
     """
     Evaluate a RL agent
     :param model: (BaseRLModel object) the RL Agent
     :param num_episodes: (int) number of episodes to evaluate it
-    :return: (float) Mean reward for the last num_episodes
+    :return: (Tuple) Mean reward for the last num_episodes, list of all rewards
     """
     # This function will only work for a single Environment
-    env = model.get_env()
+    env = agent_model.get_env()
     all_episode_rewards = []
     for i in range(num_episodes):
         episode_rewards = []
@@ -25,10 +25,13 @@ def evaluate(model, num_episodes=100):
         obs = env.reset()
         while not done:
             # _states are only useful when using LSTM policies
-            action, _states = model.predict(obs)
+
+            action, _states = agent_model.predict(obs)
+
             # here, action, rewards and dones are arrays
             # because we are using vectorized env
             obs, reward, done, info = env.step(action)
+
             episode_rewards.append(reward)
 
         all_episode_rewards.append(sum(episode_rewards))

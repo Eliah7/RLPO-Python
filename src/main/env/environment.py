@@ -10,7 +10,7 @@
 import gym
 from gym import spaces
 import numpy as np
-from .data import *
+from src.main.env.data import lineData, loadData
 from src.main.util.binary_ops import *
 from src.main.util.java_utils import dlf_analyse
 
@@ -18,7 +18,7 @@ class Environment(gym.Env):
     """Custom Environment that follows gym interface"""
     metadata = {'render.modes': ['human']}
 
-    N_DISCRETE_ACTIONS = len(lineData)
+    N_DISCRETE_ACTIONS = len(lineData) + 1
 
     """
         Arguments:
@@ -34,14 +34,15 @@ class Environment(gym.Env):
         self.n_nodes = n_nodes
         self.load_data = load_data
         self.line_data = line_data
-        self.num_actions = 0
-        self.max_action = get_max_number(self.n_nodes)
+        self.max_action = 2 ** self.n_nodes
         self.reward_range = spaces.Box(low=0, high=1000, shape=(1,)) #spaces.Box(np.array(0), np.array(100))
-        self.action_space = spaces.Discrete(self.n_nodes)
+        # 8589934592
+        self.action_space = spaces.Discrete(self.n_nodes+1)
+        self.num_actions = 0
 
         # (sum_power_assigned, sum_status, sum_priority) : defines state
         #  implement value-function approximation to summarize node information
-        self.observation_space = spaces.Box(np.array((-max_capacity, -max_capacity, -max_capacity)), np.array((max_capacity, max_capacity, max_capacity)))
+        self.observation_space = spaces.Box(np.array((-10000, -10000, -10000)), np.array((10000, 10000, 10000)))
 
         self.done = False
 
@@ -52,20 +53,25 @@ class Environment(gym.Env):
 
     def step(self, action):
         # Execute one time step within the environment
+        # action = int(action[0])
         obs = self.get_observation(action)
         reward = self.reward()
+        # if self.power_assigned() >= self.max_capacity:
+        #     reward -= 5
+        #     self.done = True
+        # else:
 
-        self.done = True
-
-        if self.power_assigned() >= self.max_capacity:
+        if self.num_actions == 10:
+            # print("DONE")
             self.done = True
         else:
-            if self.num_actions == 10:
-                self.done = True
-            else:
-                self.done = False
-                self.num_actions += 1
+            self.done = False
+            # print(self.num_actions)
+            if self.power_assigned() >= self.max_capacity:
+                reward -= 5
+            self.num_actions += 1
 
+        self.done = True
         return obs, reward, self.done, {}
 
     def reset(self):
@@ -80,23 +86,34 @@ class Environment(gym.Env):
         return self.get_observation()
 
     def get_observation(self, action=np.inf):
-        # print(action)
         # assert (2 ** self.n_nodes) >= action >= 0, 'Action can not exceed nodes count'
-
         if action == np.inf :
             return self.current_state()
         else:
             # print("===> Action : {} in binary: {}".format(action, get_bin_str_with_max_count(action, self.n_nodes)))
-            action_str = get_bin_str_with_max_count(action, self.n_nodes)
 
-            self.act(action_str)
+            # print("ACTION: " + action_str)
+            if action <= self.n_nodes:
+                self.act_from_num(action=action)
+            else:
+                action_str = get_bin_str_with_max_count(action, self.n_nodes)
+                self.act(action_str)
+            print("CURRENT STATE: " + str(self.load_data[:, 4]))
 
             return self.current_state()
 
+    def act_from_num(self, action):
+        if action == 0:
+            pass
+        elif self.load_data[:, 4][action-1] == 0:
+            self.load_data[:, 4][action-1] = 1
+        else:
+            self.load_data[:, 4][action-1] = 0
 
     def act(self, action_str):
-        for action in range(self.n_nodes):
+        for action in range(len(action_str)):
             self.load_data[:, 4][action] = int(action_str[action])
+        return
 
     def current_state(self):
         power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 4])
@@ -106,14 +123,22 @@ class Environment(gym.Env):
         return np.array([power_assigned, sum_statuses, sum_priorities])
 
     def reward(self):
-        status_reward = 1 - np.sum(self.load_data[:, 4] * self.load_data[:, 5]) ** 0.4 # positive rewards
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 4] * np.square(self.load_data[:, 5])) ** 0.4 # positive rewards
         power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 4])  ** 0.4
-        # dlf_results = dlf_analyse(self) ** 0.1
-        # #
-        # print("=====> DLF: {}".format(dlf_analyse(self)))
-        # print("=====> Reward : {}".format(status_reward * power_assigned))
 
-        return status_reward * power_assigned
+        power_values_from_dlf, _ = dlf_analyse(self)
+
+        power_values_from_dlf = np.array(power_values_from_dlf)
+        # 
+        # # if self.load_data[:, 4][0] != 1:
+        # #     return -100
+        #
+        if power_values_from_dlf[(power_values_from_dlf > 1.1)] :
+            return -100 + status_reward
+
+        if power_values_from_dlf[(power_values_from_dlf < 0.9)] :
+            return -100 + status_reward
+        return status_reward
 
     def power_assigned(self):
         return np.sum(self.load_data[:, 1] * self.load_data[:, 4])

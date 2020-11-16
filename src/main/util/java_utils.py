@@ -9,7 +9,7 @@
 
 """
 from py4j.java_gateway import JavaGateway
-from src.main.env.environment import *
+# from src.main.env.environment import *
 
 def dlf_analyse(env):
     gateway = JavaGateway()
@@ -27,7 +27,13 @@ def dlf_analyse(env):
     dlf_app.setLineData(line_data)
     dlf_app.setCentralBus(1)
 
-    return dlf_app.calculate()
+    power_loss = dlf_app.calculate()
+
+    power_values = []
+    for value in dlf_app.getPowerValues():
+        power_values.append(value)
+
+    return power_values, power_loss
 
 def get_java_line_data(line_data, gateway):
     column_len = len(line_data)
@@ -53,7 +59,7 @@ def get_java_load_data(load_data, gateway):
 
     return java_load_data
 
-if __name__ == '__main__':
-    env = Environment(3000)
-    print(dlf_analyse(env))
+# if __name__ == '__main__':
+#     env = Environment(3000)
+#     print(dlf_analyse(env))
 

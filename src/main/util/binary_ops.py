@@ -22,6 +22,7 @@ def get_max_number(count):
     return int(digit_count_to_binary_str(count), 2)
 
 def get_bin_str_with_max_count(action, count):
+    # print(action)
     bin_str = bin(action)[2:]
 
     remaining_len = count - len(bin_str)

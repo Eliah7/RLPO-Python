@@ -60,14 +60,19 @@ class PSOAgent:
         return binary_str_to_int(result_str), []
 
 
+import time
+
 if __name__ == '__main__':
     agent = PSOAgent(env=Environment(15))
 
+    start = time.time()
     _, all_rewards = evaluate(agent)
+    end = time.time()
+    print("Running time per time step: {}".format((end - start) / 100))
 
     print(all_rewards)
 
-    plot_moving_avg(np.array(all_rewards), title="Running Average - PSO ")
+    plot_moving_avg(np.array(all_rewards), title="Running Average Reward - PSO ")
 
 
 

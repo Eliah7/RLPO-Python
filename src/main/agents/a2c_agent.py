@@ -10,30 +10,41 @@
 
 
 
-from stable_baselines.common.vec_env import DummyVecEnv
+# from stable_baselines.common.vec_env import DummyVecEnv
 # from stable_baselines.deepq.policies import MlpPolicy, CnnPolicy
 from stable_baselines.common.policies import MlpPolicy
 from stable_baselines import DQN, A2C
 from src.main.env.environment import Environment
-from stable_baselines.bench import Monitor
-import numpy as np
+# from stable_baselines.bench import Monitor
+# import numpy as np
 from src.main.util.graph_utils import *
 from src.main.util.model_utils import *
 
+import time
+
 
 if __name__ == '__main__':
-    env = DummyVecEnv([lambda: Environment(15)])
-    # env = Monitor(env, "./logs")
-    model = A2C(MlpPolicy, env, verbose=1)
+    env = Environment(15)
+    # # env = Monitor(env, "./logs")
+    model = A2C(MlpPolicy,env=env, _init_setup_model=False, verbose=1)
+    model.setup_model()
 
-    # evaluate before training
+
+    # # evaluate before training
     _, all_rewards = evaluate(model)
     plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - A2C")
 
+    start = time.time()
     model.learn(total_timesteps=20000)
+    end = time.time()
+    print("Training Time: {}".format(end - start))
+    # model.save("./saved_models/a2c")
 
     # evaluate after training
+    start = time.time()
     _, all_rewards = evaluate(model)
-    print(all_rewards)
+    end = time.time()
+    print("Running time per time step: {}".format((end - start) / 100))
+    # print(all_rewards)
 
     plot_moving_avg(np.array(all_rewards), title="Running Average reward after training - A2C")
