@@ -114,12 +114,12 @@ class Environment(gym.Env):
     def current_state(self):
         power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 3])
         sum_statuses = np.sum(self.load_data[:, 3])
-        sum_priorities = np.sum(self.load_data[:, 3])
+        sum_priorities = np.sum(self.load_data[:, 4])
 
-        return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 3]))
+        return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
 
     def reward(self):
-        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 3])) ** 0.4 # positive rewards
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4 # positive rewards
         power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 3])  ** 0.4
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
