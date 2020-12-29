@@ -99,27 +99,27 @@ class Environment(gym.Env):
     def act_from_num(self, action):
         if action == 0:
             pass
-        elif self.load_data[:, 4][action-1] == 0:
-            self.load_data[:, 4][action-1] = 1
+        elif self.load_data[:, 3][action-1] == 0:
+            self.load_data[:, 3][action-1] = 1
         else:
-            self.load_data[:, 4][action-1] = 0
+            self.load_data[:, 3][action-1] = 0
 
     def act(self, action_str):
         for action in range(len(action_str)):
-            self.load_data[:, 4][action] = int(action_str[action])
+            self.load_data[:, 3][action] = int(action_str[action])
 
-        self.load_data[:, 4][0] = 1
+        self.load_data[:, 3][0] = 1
         return
 
     def current_state(self):
         power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 3])
         sum_statuses = np.sum(self.load_data[:, 3])
-        sum_priorities = np.sum(self.load_data[:, 4])
+        sum_priorities = np.sum(self.load_data[:, 3])
 
-        return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
+        return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 3]))
 
     def reward(self):
-        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4 # positive rewards
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 3])) ** 0.4 # positive rewards
         power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 3])  ** 0.4
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
