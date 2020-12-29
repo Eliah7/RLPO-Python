@@ -8,6 +8,7 @@
 
 """
 import numpy as np
+import pandas as pd
 
 def evaluate(agent_model, num_episodes=100):
     """
@@ -40,3 +41,12 @@ def evaluate(agent_model, num_episodes=100):
     print("Mean reward:", mean_episode_reward, "Num episodes:", num_episodes)
 
     return mean_episode_reward, all_episode_rewards
+
+def get_mva_kva(grid_name):
+    model_desc = pd.read_csv("../env/data/models.csv")
+
+    if grid_name == "bus33":
+        return 100
+
+    return float(model_desc.loc[model_desc['File'] == grid_name]['Mva']), float(model_desc.loc[model_desc['File'] == grid_name]['Kva'])
+

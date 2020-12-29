@@ -10,15 +10,14 @@
 import gym
 from gym import spaces
 import numpy as np
-from src.main.env.data import lineData, loadData
+from src.main.env.data import *
 from src.main.util.binary_ops import *
 from src.main.util.java_utils import dlf_analyse
+from src.main.util.model_utils import *
 
 class Environment(gym.Env):
     """Custom Environment that follows gym interface"""
     metadata = {'render.modes': ['human']}
-
-    N_DISCRETE_ACTIONS = len(lineData) + 1
 
     """
         Arguments:
@@ -27,13 +26,21 @@ class Environment(gym.Env):
             line_data: Array of (index, from_node, to_node, R, X)
             load_data: Array of (node, p, q, bus_type, status, priority) 
     """
-    def __init__(self, max_capacity, n_nodes=N_DISCRETE_ACTIONS, line_data=lineData, load_data=loadData):
+    def __init__(self, grid_name="bus33", line_data=lineData, load_data=loadData):
         super(Environment, self).__init__()
 
-        self.max_capacity = max_capacity
-        self.n_nodes = n_nodes
-        self.load_data = load_data
-        self.line_data = line_data
+        self.grid_name = grid_name
+
+        if not grid_name == "bus33":
+            self.load_data, self.line_data = get_data_from_csv(grid_name)
+        else:
+            self.load_data = load_data
+            self.line_data = line_data
+
+        self.max_capacity, _ = get_mva_kva(grid_name) # MVa to KVa
+        self.max_capacity = self.max_capacity * 1000
+        self.n_nodes = len(self.line_data) + 1
+
         self.reward_range = spaces.Box(low=0, high=1000, shape=(1,)) #spaces.Box(np.array(0), np.array(100))
 
         high = np.array([np.inf] * self.n_nodes)
@@ -58,7 +65,7 @@ class Environment(gym.Env):
         obs = self.get_observation(action)
         reward = self.reward()
 
-        power_values_from_dlf, _ = dlf_analyse(self)
+        power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 
         if self.num_actions == 10:
             # print("DONE")
@@ -72,8 +79,12 @@ class Environment(gym.Env):
 
     def reset(self):
         # Reset the state of the environment to an initial state
-        self.load_data = loadData
-        self.line_data = lineData
+        if not self.grid_name == "bus33":
+            self.load_data, self.line_data = get_data_from_csv(self.grid_name)
+        else:
+            self.load_data = loadData
+            self.line_data = lineData
+
         self.num_actions = 0
 
         self.done = False
@@ -113,25 +124,22 @@ class Environment(gym.Env):
         sum_statuses = np.sum(self.load_data[:, 4])
         sum_priorities = np.sum(self.load_data[:, 5])
 
-        # return np.array([power_assigned, sum_statuses, sum_priorities])
-        # return np.array(self.load_data[:, 1] * self.load_data[:, 4] * np.square(self.load_data[:, 5]))
-        return np.array(self.load_data[:, 4])
+        return np.array(self.load_data[:, 1] * self.load_data[:, 4] * np.square(self.load_data[:, 5]))
 
     def reward(self):
         status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 4] * np.square(self.load_data[:, 5])) ** 0.4 # positive rewards
         power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 4])  ** 0.4
 
-        power_values_from_dlf, _ = dlf_analyse(self)
+        power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 
         power_values_from_dlf = np.array(power_values_from_dlf)
+        # print(power_values_from_dlf)
 
-        if power_values_from_dlf[(power_values_from_dlf > 1.1)]:
-            return np.inf
+        if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
+            print("values of max and min outside range")
+            return -90000000000
 
-        if power_values_from_dlf[(power_values_from_dlf < 0.9)] :
-            return np.inf
-
-        return status_reward
+        return status_reward / self.n_nodes
 
     def power_assigned(self):
         return np.sum(self.load_data[:, 1] * self.load_data[:, 4])

@@ -19,7 +19,6 @@ class PSOAgent:
     Agent based on Particle Swarm Optimization
 
     """
-
     def __init__(self, env, num_iterations=100):
         self.gateway = JavaGateway(gateway_parameters=GatewayParameters(port=DEFAULT_PSO_AGENT_PORT))
         self.pso_app = self.gateway.entry_point
@@ -63,7 +62,7 @@ class PSOAgent:
 import time
 
 if __name__ == '__main__':
-    agent = PSOAgent(env=Environment(15))
+    agent = PSOAgent(env=Environment(grid_name="kimweri"))
 
     start = time.time()
     _, all_rewards = evaluate(agent)

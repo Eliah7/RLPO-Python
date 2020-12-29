@@ -10,8 +10,9 @@
 """
 from py4j.java_gateway import JavaGateway
 # from src.main.env.environment import *
+from src.main.util.model_utils import *
 
-def dlf_analyse(env):
+def dlf_analyse(line_data, load_data, grid_name="bus33"):
     gateway = JavaGateway()
     dlf_app = gateway.entry_point
 
@@ -20,11 +21,15 @@ def dlf_analyse(env):
     #     if env.load_data[:, 4][i] == 0:
     #         env.load_data[:, 1][i] = 0
 
-    line_data = get_java_line_data(env.line_data, gateway)
-    load_data = get_java_load_data(env.load_data, gateway)
+    line_data_n = get_java_line_data(line_data, gateway)
+    load_data_n = get_java_load_data(load_data, gateway)
 
-    dlf_app.setBusData(load_data)
-    dlf_app.setLineData(line_data)
+    mva, kva = get_mva_kva(grid_name=grid_name)
+
+    dlf_app.setBusData(load_data_n)
+    dlf_app.setLineData(line_data_n)
+    dlf_app.setBaseMva(mva)
+    dlf_app.setBaseKva(kva)
     dlf_app.setCentralBus(1)
 
     power_loss = dlf_app.calculate()
