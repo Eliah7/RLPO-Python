@@ -20,7 +20,7 @@ from src.main.env.environment import Environment
 
 import time
 
-def train_ppo2(grid_name):
+def train_ppo2(grid_name, train_steps=20000):
     log_dir = "./tensorboard/"
     env = DummyVecEnv([lambda: Environment(grid_name=grid_name)])
     # env = Monitor(env, "./logs")
@@ -31,7 +31,7 @@ def train_ppo2(grid_name):
     plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - PPO2")
 
     start = time.time()
-    model.learn(total_timesteps=2000)
+    model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
     model.save("./saved_models/ppo2")

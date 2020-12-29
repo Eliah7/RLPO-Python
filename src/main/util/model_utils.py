@@ -45,8 +45,5 @@ def evaluate(agent_model, num_episodes=100):
 def get_mva_kva(grid_name):
     model_desc = pd.read_csv("../env/data/models.csv")
 
-    if grid_name == "bus33":
-        return 100
-
     return float(model_desc.loc[model_desc['File'] == grid_name]['Mva']), float(model_desc.loc[model_desc['File'] == grid_name]['Kva'])
 

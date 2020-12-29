@@ -17,7 +17,7 @@ import os
 
 import time
 
-def train_dqn(grid_name):
+def train_dqn(grid_name, train_steps=2000):
     log_dir = "./tensorboard/"
     os.makedirs(log_dir, exist_ok=True)
 
@@ -31,7 +31,7 @@ def train_dqn(grid_name):
     plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")
 
     start = time.time()
-    model.learn(total_timesteps=2000)
+    model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
 

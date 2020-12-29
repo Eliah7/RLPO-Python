@@ -31,13 +31,9 @@ class Environment(gym.Env):
 
         self.grid_name = grid_name
 
-        if not grid_name == "bus33":
-            self.load_data, self.line_data = get_data_from_csv(grid_name)
-        else:
-            self.load_data = load_data
-            self.line_data = line_data
+        self.load_data, self.line_data = get_data_from_csv(grid_name)
 
-        self.max_capacity, _ = get_mva_kva(grid_name) # MVa to KVa
+        self.max_capacity, _ = get_mva_kva(self.grid_name) # MVa to KVa
         self.max_capacity = self.max_capacity * 1000
         self.n_nodes = len(self.line_data) + 1
 
@@ -49,15 +45,11 @@ class Environment(gym.Env):
         self.action_space = spaces.Discrete(self.n_nodes+1)
         self.num_actions = 0
 
-        # (sum_power_assigned, sum_status, sum_priority) : defines state
-        #  implement value-function approximation to summarize node information
-        # self.observation_space = spaces.Box(np.array((-10000, -10000, -10000)), np.array((10000, 10000, 10000)))
-
         self.done = False
 
-    def get_remaining_power(self, max_capacity, load_data):
-        power_assigned = np.sum(load_data[:, 1] * load_data[:, 4])
-        return max_capacity - power_assigned
+    def get_remaining_power(self):
+        power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 3])
+        return self.max_capacity - power_assigned
 
     def step(self, action):
         # Execute one time step within the environment
@@ -100,7 +92,7 @@ class Environment(gym.Env):
             else:
                 action_str = get_bin_str_with_max_count(action, self.n_nodes)
                 self.act(action_str)
-            # print("CURRENT STATE: " + str(self.load_data[:, 4]))
+            print("CURRENT STATE: " + str(self.load_data[:, 3]))
 
             return self.current_state()
 
@@ -120,15 +112,15 @@ class Environment(gym.Env):
         return
 
     def current_state(self):
-        power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 4])
-        sum_statuses = np.sum(self.load_data[:, 4])
-        sum_priorities = np.sum(self.load_data[:, 5])
+        power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 3])
+        sum_statuses = np.sum(self.load_data[:, 3])
+        sum_priorities = np.sum(self.load_data[:, 4])
 
-        return np.array(self.load_data[:, 1] * self.load_data[:, 4] * np.square(self.load_data[:, 5]))
+        return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
 
     def reward(self):
-        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 4] * np.square(self.load_data[:, 5])) ** 0.4 # positive rewards
-        power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 4])  ** 0.4
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4 # positive rewards
+        power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 3])  ** 0.4
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 
@@ -142,4 +134,4 @@ class Environment(gym.Env):
         return status_reward / self.n_nodes
 
     def power_assigned(self):
-        return np.sum(self.load_data[:, 1] * self.load_data[:, 4])
+        return np.sum(self.load_data[:, 1] * self.load_data[:, 3])
