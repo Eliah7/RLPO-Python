@@ -76,12 +76,9 @@ class Environment(gym.Env):
 
     def reset(self):
         # Reset the state of the environment to an initial state
-        if not self.grid_name == "bus33":
-            self.load_data, self.line_data = get_data_from_csv(self.grid_name)
-        else:
-            self.load_data = loadData
-            self.line_data = lineData
-
+        status = self.load_data[:, 3]
+        self.load_data, self.line_data = get_data_from_csv(self.grid_name)
+        self.load_data[:, 3] = status
         self.num_actions = 0
 
         self.done = False
@@ -89,7 +86,7 @@ class Environment(gym.Env):
         return self.get_observation()
 
     def get_observation(self, action=np.inf):
-        if action == np.inf :
+        if action == np.inf:
             return self.current_state()
         else:
             if action <= self.n_nodes:
@@ -129,9 +126,12 @@ class Environment(gym.Env):
         return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
 
     def reward(self):
-        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 5])) ** 0.4
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4
+        print(self.load_data[:, 1])
+        print(self.load_data[:, 3])
+        print(self.load_data[:, 4])
         # print(self.load_data) #* self.load_data[:, 3] * np.square(self.load_data[:, 4]))# positive rewards
-        power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 3])  ** 0.4
+        power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 3]) ** 0.4
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 

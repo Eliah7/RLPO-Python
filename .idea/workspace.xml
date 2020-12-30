@@ -2,32 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/agents/ddpg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward after training.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward before training - A2C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/dqn/DQN Training Curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward after training - DQN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward before training - DQN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/PPO2 Training Curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward after training - PPO2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward before training - PPO2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/old_neglog_action_probability.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - PPO2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - PPO2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/final_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/final_actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_11/events.out.tfevents.1609253660.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_11/events.out.tfevents.1609253660.Elias-MacBook-Pro-1022.local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/util/java_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/java_utils.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,74 +30,6 @@
     <SUITE FILE_PATH="coverage/RLPO_Python$final_actions.coverage" NAME="final_actions Coverage Results" MODIFIED="1609151118282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_max_number_for_binary_digit_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count Coverage Results" MODIFIED="1603809685552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps Coverage Results" MODIFIED="1603817979498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dqn_agent.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#154#207#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward after training - DQN.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward after training - DQN.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward after training.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward after training.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-              <folding>
-                <element signature="e#281#335#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward after training - A2C.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - A2C.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="PPO2 Training Curve.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/PPO2 Training Curve.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward after training - PPO2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward after training - PPO2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward before training - A2C.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward before training - A2C.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward before training - DQN.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward before training - DQN.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="Running Average reward before training - PPO2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward before training - PPO2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -189,6 +101,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectId" id="1mNkGqn3JhTZc59WoOFkK0oz4D3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -290,8 +203,13 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
@@ -304,18 +222,6 @@
       <recent name="$PROJECT_DIR$/src/main/agents" />
       <recent name="$PROJECT_DIR$/src/main/env" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="a2c_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -336,6 +242,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="dqn_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
@@ -355,6 +264,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
@@ -374,6 +286,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="ppo2_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
@@ -393,6 +308,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="pso_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
@@ -412,6 +330,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="pso_agent_test" type="tests" factoryName="Unittests">
       <module name="RLPO-Python" />
@@ -427,14 +348,15 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/src/tests&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pso_agent_test" />
       <item itemvalue="Python.dqn_agent" />
       <item itemvalue="Python.a2c_agent" />
       <item itemvalue="Python.ppo2_agent" />
       <item itemvalue="Python.pso_agent" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.pso_agent_test" />
     </list>
     <recent_temporary>
       <list>
@@ -446,6 +368,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -532,14 +455,8 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -547,7 +464,6 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
