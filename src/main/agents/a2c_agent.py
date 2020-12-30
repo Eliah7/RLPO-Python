@@ -22,7 +22,7 @@ from src.main.util.model_utils import *
 
 import time
 
-def train_a2c(grid_name, train_steps=20000):
+def train_a2c(grid_name, train_steps=1000):
     log_dir = "./tensorboard/"
 
     env = Environment(grid_name=grid_name)

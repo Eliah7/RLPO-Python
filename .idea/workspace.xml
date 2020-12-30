@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/agents/ddpg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward after training.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward before training - A2C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/dqn/DQN Training Curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward after training - DQN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward before training - DQN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/PPO2 Training Curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward after training - PPO2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward before training - PPO2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/final results/pp02/old_neglog_action_probability.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - PPO2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - PPO2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_11/events.out.tfevents.1609253660.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_11/events.out.tfevents.1609253660.Elias-MacBook-Pro-1022.local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +42,7 @@
     <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1609241463250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$random_agent.coverage" NAME="random_agent Coverage Results" MODIFIED="1604921067789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$ppo2_agent.coverage" NAME="ppo2_agent Coverage Results" MODIFIED="1609235338371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1609253633033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1609323844612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$java_utils.coverage" NAME="java_utils Coverage Results" MODIFIED="1604661187686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/util" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_environment_tests_TestEnvironment_testCreateEnvironment.coverage" NAME="Unittests for environment_tests.TestEnvironment.testCreateEnvironment Coverage Results" MODIFIED="1604995882735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$pso_agent_test.coverage" NAME="pso_agent_test Coverage Results" MODIFIED="1604484158756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
@@ -33,110 +53,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
+      <file leaf-file-name="dqn_agent.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
+            <state relative-caret-position="65">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
-                <element signature="e#153#163#0" expanded="true" />
+                <element signature="e#154#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="76" column="19" selection-start-line="62" selection-start-column="16" selection-end-line="76" selection-end-column="19" />
-              <folding>
-                <element signature="e#154#172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="Running Average reward after training - DQN.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward after training - DQN.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="model_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-              <folding>
-                <element signature="e#153#171#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="Running Average reward after training.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward after training.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="bus33-ld.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-ld.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bus33-bd.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-bd.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#154#201#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="52">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="e#281#335#0" expanded="true" />
-                <element signature="e#1490#2351#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bbq-village-bd.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-            </state>
-          </provider>
+      <file leaf-file-name="Running Average reward after training - A2C.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - A2C.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="kimweri-bd.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
+      <file leaf-file-name="PPO2 Training Curve.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/PPO2 Training Curve.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="kimweri-ld.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-ld.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="19" selection-end-column="40" />
-            </state>
-          </provider>
+      <file leaf-file-name="Running Average reward after training - PPO2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward after training - PPO2.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="Running Average reward before training - A2C.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward before training - A2C.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="Running Average reward before training - DQN.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward before training - DQN.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="Running Average reward before training - PPO2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward before training - PPO2.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -184,19 +162,20 @@
         <option value="$PROJECT_DIR$/src/main/agents/pso_agent.py" />
         <option value="$PROJECT_DIR$/src/main/util/java_utils.py" />
         <option value="$PROJECT_DIR$/src/main/main.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/main.py" />
         <option value="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
         <option value="$PROJECT_DIR$/src/main/agents/dqn_agent.py" />
         <option value="$PROJECT_DIR$/src/main/env/data/abiudi-bd.csv" />
-        <option value="$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv" />
         <option value="$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv" />
         <option value="$PROJECT_DIR$/src/main/env/data/models.csv" />
         <option value="$PROJECT_DIR$/src/main/env/data/bus33-ld.csv" />
         <option value="$PROJECT_DIR$/src/main/util/model_utils.py" />
         <option value="$PROJECT_DIR$/src/main/env/data.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
         <option value="$PROJECT_DIR$/src/main/env/data/bus33-bd.csv" />
+        <option value="$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv" />
         <option value="$PROJECT_DIR$/src/main/env/environment.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/ddpg.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/main.py" />
       </list>
     </option>
   </component>
@@ -247,7 +226,57 @@
               <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="agents" type="462c0819:PsiDirectoryNode" />
+              <item name="final results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="agents" type="462c0819:PsiDirectoryNode" />
+              <item name="final results" type="462c0819:PsiDirectoryNode" />
+              <item name="a2c" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="agents" type="462c0819:PsiDirectoryNode" />
+              <item name="final results" type="462c0819:PsiDirectoryNode" />
+              <item name="dqn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="agents" type="462c0819:PsiDirectoryNode" />
+              <item name="final results" type="462c0819:PsiDirectoryNode" />
+              <item name="pp02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="agents" type="462c0819:PsiDirectoryNode" />
+              <item name="plots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
@@ -269,6 +298,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/agents/final results/a2c" />
+      <recent name="$PROJECT_DIR$/src/main/agents/final results/pp02" />
+      <recent name="$PROJECT_DIR$/src/main/agents/final results/dqn" />
       <recent name="$PROJECT_DIR$/src/main/agents" />
       <recent name="$PROJECT_DIR$/src/main/env" />
     </key>
@@ -470,21 +502,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50143063" side_tool="true" weight="0.28242424" />
-      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.22947761" side_tool="true" visible="true" weight="0.3383405" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.23035714" side_tool="true" visible="true" weight="0.18454936" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928468" weight="0.3272727" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32848486" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.35030302" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.3212121" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.22060606" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17238913" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35407725" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.7705224" visible="true" weight="0.3383405" />
+      <window_info active="true" anchor="right" id="SciView" order="4" sideWeight="0.76964283" visible="true" weight="0.18454936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -520,90 +551,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/ops/array_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="3017" selection-start-line="3017" selection-end-line="3017" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="1661" selection-start-line="1661" selection-end-line="1661" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="720" column="4" selection-start-line="720" selection-start-column="4" selection-end-line="720" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/six.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="855" selection-start-line="855" selection-end-line="855" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1833">
-          <caret line="680" selection-start-line="680" selection-end-line="680" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3/six/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/setuptools/_vendor/ordered_set.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/jnius/reflect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="159" column="17" selection-start-line="159" selection-start-column="17" selection-end-line="159" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/py4j/java_gateway.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="1855" column="13" selection-start-line="1855" selection-start-column="13" selection-end-line="1855" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="2236" column="4" selection-start-line="2236" selection-start-column="4" selection-end-line="2236" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/common/vec_env/base_vec_env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.7/site-packages/gym/spaces/discrete.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -738,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/numba/core/pythonapi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -765,26 +705,6 @@
           <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="e#154#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="e#154#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="e#154#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,34 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-ld.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#154#201#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,30 +764,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="74" selection-start-column="74" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-bd.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state>
+          <caret column="77" selection-start-column="77" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="534" selection-start-line="534" selection-end-line="534" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
+        <state relative-caret-position="196">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="64" selection-end-column="30" />
           <folding>
             <element signature="e#153#163#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
+    <entry file="file://$PROJECT_DIR$/src/main/agents/ddpg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="503">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding>
+            <element signature="e#308#318#0" expanded="true" />
+            <element signature="e#1715#2680#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
+            <element signature="e#154#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="49" selection-start-line="44" selection-end-line="49" />
+          <folding>
+            <element signature="e#154#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/dqn/DQN Training Curve.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward before training - A2C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward before training - PPO2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/Running Average reward after training - PPO2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward before training - DQN.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/PPO2 Training Curve.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/pp02/old_neglog_action_probability.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/dqn/Running Average reward after training - DQN.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - A2C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final results/a2c/Running Average reward after training.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
             <element signature="e#281#335#0" expanded="true" />
-            <element signature="e#1490#2351#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#154#207#0" expanded="true" />
           </folding>
         </state>
       </provider>

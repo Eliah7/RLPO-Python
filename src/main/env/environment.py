@@ -43,6 +43,7 @@ class Environment(gym.Env):
         self.observation_space = spaces.Box(-high, high)
 
         self.action_space = spaces.Discrete(self.n_nodes+1)
+
         self.num_actions = 0
 
         self.done = False
@@ -58,6 +59,10 @@ class Environment(gym.Env):
         reward = self.reward()
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
+        power_values_from_dlf = np.array(power_values_from_dlf)
+
+        # if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
+        #     self.done = True
 
         if self.num_actions == 10:
             # print("DONE")
@@ -89,9 +94,11 @@ class Environment(gym.Env):
         else:
             if action <= self.n_nodes:
                 self.act_from_num(action=action)
+                print(action)
             else:
                 action_str = get_bin_str_with_max_count(action, self.n_nodes)
                 self.act(action_str)
+                print(action_str)
             print("CURRENT STATE: " + str(self.load_data[:, 3]))
 
             return self.current_state()
@@ -104,8 +111,11 @@ class Environment(gym.Env):
         else:
             self.load_data[:, 3][action-1] = 0
 
+        self.load_data[:, 3][0] = 1
+
     def act(self, action_str):
         for action in range(len(action_str)):
+            print(action_str)
             self.load_data[:, 3][action] = int(action_str[action])
 
         self.load_data[:, 3][0] = 1
@@ -119,7 +129,8 @@ class Environment(gym.Env):
         return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
 
     def reward(self):
-        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4 # positive rewards
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 5])) ** 0.4
+        # print(self.load_data) #* self.load_data[:, 3] * np.square(self.load_data[:, 4]))# positive rewards
         power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 3])  ** 0.4
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
@@ -131,7 +142,8 @@ class Environment(gym.Env):
             print("values of max and min outside range")
             return -90000000000
 
-        return status_reward / self.n_nodes
+        print(status_reward)
+        return status_reward
 
     def power_assigned(self):
         return np.sum(self.load_data[:, 1] * self.load_data[:, 3])
