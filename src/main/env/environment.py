@@ -137,10 +137,12 @@ class Environment(gym.Env):
 
         power_values_from_dlf = np.array(power_values_from_dlf)
         # print(power_values_from_dlf)
+        print("MIN VOL: {}".format(power_values_from_dlf.min()))
+        print("NAX VOL: {}".format(power_values_from_dlf.max()))
 
         if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
             print("values of max and min outside range")
-            return -90000000000
+            return -2
 
         print(status_reward)
         return status_reward
