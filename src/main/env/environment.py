@@ -164,9 +164,9 @@ class Environment(gym.Env):
 
         if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
             print("values of max and min outside range")
-            return -10
+            return -30
 
-        print(status_reward)    # divide by num_ctions which is the number of episodes
+        print(status_reward)    # divide by num_actions which is the number of episodes
         return status_reward
 
     def power_assigned(self):

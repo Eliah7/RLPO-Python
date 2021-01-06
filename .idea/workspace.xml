@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="Update dlf">
-      <change afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_22/events.out.tfevents.1609341963.DESKTOP-EGCPFG0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_23/events.out.tfevents.1609344197.DESKTOP-EGCPFG0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_24/events.out.tfevents.1609344396.DESKTOP-EGCPFG0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_25/events.out.tfevents.1609344618.DESKTOP-EGCPFG0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_26/events.out.tfevents.1609344858.DESKTOP-EGCPFG0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_27/events.out.tfevents.1609344956.DESKTOP-EGCPFG0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensorboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/final_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/final_actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/util/java_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/java_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +22,7 @@
     <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1609241463250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$random_agent.coverage" NAME="random_agent Coverage Results" MODIFIED="1604921067789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$ppo2_agent.coverage" NAME="ppo2_agent Coverage Results" MODIFIED="1609235338371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1609933503310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1609939343191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$java_utils.coverage" NAME="java_utils Coverage Results" MODIFIED="1604661187686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/util" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_environment_tests_TestEnvironment_testCreateEnvironment.coverage" NAME="Unittests for environment_tests.TestEnvironment.testCreateEnvironment Coverage Results" MODIFIED="1604995882735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$pso_agent_test.coverage" NAME="pso_agent_test Coverage Results" MODIFIED="1604484158756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
@@ -76,8 +60,8 @@
       <file leaf-file-name="environment.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+            <state relative-caret-position="341">
+              <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
               <folding>
                 <element signature="e#153#163#0" expanded="true" />
                 <element signature="e#3267#3494#0" />
@@ -509,6 +493,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50143063" side_tool="true" weight="0.28242424" />
@@ -910,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+        <state relative-caret-position="341">
+          <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
           <folding>
             <element signature="e#153#163#0" expanded="true" />
             <element signature="e#3267#3494#0" />
