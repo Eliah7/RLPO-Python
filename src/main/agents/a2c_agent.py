@@ -31,8 +31,8 @@ def train_a2c(env, train_steps=1000):
     model.setup_model()
 
     # # evaluate before training
-    _, all_rewards = evaluate(model)
-    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - A2C")
+    # _, all_rewards = evaluate(model)
+    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - A2C")
 
     start = time.time()
     model.learn(total_timesteps=train_steps)

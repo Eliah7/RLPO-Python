@@ -9,17 +9,17 @@
 """
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 def binary_str_to_int(bin_str):
     return int(bin_str, 2)
 
 def digit_count_to_binary_str(count):
-    print(count)
     return str(np.ones(count, dtype=np.int))[1:-1].replace(" ", "")
 
 
 def get_max_number(count):
-    return int(digit_count_to_binary_str(count), 2)
+    return int(math.pow(2, count))
 
 def get_bin_str_with_max_count(action, count):
     # print(action)

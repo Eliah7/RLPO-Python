@@ -44,6 +44,7 @@ class Environment(gym.Env):
         self.observation_space = spaces.Box(-high, high)
 
         if action_type.lower() == "discrete":
+            print("MAX NUM {}".format(get_max_number(self.n_nodes)))
             self.action_space = spaces.Discrete(self.n_nodes+1)
         elif action_type.lower() == "continous":
             # self.action_space = spaces.Box(low=0,high=1, shape=(self.n_nodes, 1), dtype=np.int)
