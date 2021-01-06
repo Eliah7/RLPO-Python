@@ -22,10 +22,10 @@ from src.main.util.model_utils import *
 
 import time
 
-def train_a2c(grid_name, train_steps=1000):
+def train_a2c(env, train_steps=1000):
     log_dir = "./tensorboard/"
 
-    env = Environment(grid_name=grid_name)
+
     # # env = Monitor(env, "./logs")
     model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir)
     model.setup_model()

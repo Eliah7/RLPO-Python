@@ -12,7 +12,7 @@ from src.main.util.model_utils import evaluate
 from src.main.env.environment import Environment
 
 if __name__ == '__main__':
-    env = Environment(100)
+    env = Environment(grid_name="bus33")
     # model = A2C.load("./saved_models/a2c")
     model = DQN.load("./saved_models/dqn", env=env)
     # model.env = env

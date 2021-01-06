@@ -16,10 +16,9 @@ def dlf_analyse(line_data, load_data, grid_name="bus33"):
     gateway = JavaGateway()
     dlf_app = gateway.entry_point
 
-    # env.load_data[:, 1] = [0 if status== 0 else for status in env.load_data[:, 4]]
-    # for i in range(len(env.load_data[:, 1])):
-    #     if env.load_data[:, 4][i] == 0:
-    #         env.load_data[:, 1][i] = 0
+    for i in range(len(load_data[:, 1])):
+        if load_data[:, 3][i] == 0:
+            load_data[:, 1][i] = 0
 
     line_data_n = get_java_line_data(line_data, gateway)
     load_data_n = get_java_load_data(load_data, gateway)

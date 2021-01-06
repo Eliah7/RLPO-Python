@@ -17,11 +17,9 @@ import os
 
 import time
 
-def train_dqn(grid_name, train_steps=2000):
+def train_dqn(env, train_steps=2000):
     log_dir = "./tensorboard/"
     os.makedirs(log_dir, exist_ok=True)
-
-    env = Environment(grid_name=grid_name)
 
     # env = Monitor(env, "./logs")
     model = DQN(MlpPolicy, env=env, _init_setup_model=True, verbose=1, exploration_fraction=0.1,

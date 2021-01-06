@@ -11,7 +11,9 @@
 from src.main.agents.a2c_agent import train_a2c
 from src.main.agents.dqn_agent import train_dqn
 from src.main.agents.ppo2_agent import train_ppo2
-# from src.main.agents.ddpg import train_ddpg
+from stable_baselines.common.vec_env import DummyVecEnv
+from src.main.env.environment import Environment
+
 
 if __name__ == '__main__':
     print("Enter the name of the agent: (eg. a2c, dqn, ppo2)")
@@ -24,24 +26,35 @@ if __name__ == '__main__':
 
     print("Enter the number of training steps: (0 for default)")
     train_steps = int(input())
+
+    print("Enter the type of state: (discrete or continous)")
+    state_type = input().lower()
+    state_type = "discrete" if state_type == "" else state_type
+
+    print("Enter the load shedding percentage: ")
+    load_shedding = int(input())
+
     print("Training Steps: {}".format(train_steps))
     print("Training ... ")
 
+    # env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type=state_type)])
+    env = Environment(grid_name=grid_name, action_type=state_type, load_shedding=load_shedding)
+
     if agent == "a2c":
         if train_steps == 0:
-            train_a2c(grid_name)
+            train_a2c(env)
         else:
-            train_a2c(grid_name, train_steps=train_steps)
+            train_a2c(env, train_steps=train_steps)
     elif agent == "dqn":
         if train_steps == 0:
-            train_dqn(grid_name)
+            train_dqn(env)
         else:
-            train_dqn(grid_name, train_steps=train_steps)
+            train_dqn(env, train_steps=train_steps)
     elif agent == "ppo2":
         if train_steps == 0:
-            train_ppo2(grid_name)
+            train_ppo2(env)
         else:
-            train_ppo2(grid_name, train_steps=train_steps)
+            train_ppo2(env, train_steps=train_steps)
     # elif agent == "ddpg":
     #     if train_steps == 0:
     #         train_ddpg(grid_name)

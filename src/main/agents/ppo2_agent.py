@@ -20,9 +20,8 @@ from src.main.env.environment import Environment
 
 import time
 
-def train_ppo2(grid_name, train_steps=20000):
+def train_ppo2(env, train_steps=20000):
     log_dir = "./tensorboard/"
-    env = DummyVecEnv([lambda: Environment(grid_name=grid_name)])
     # env = Monitor(env, "./logs")
     model = PPO2(MlpPolicy, env=env, _init_setup_model=True, verbose=1, tensorboard_log=log_dir)
 
