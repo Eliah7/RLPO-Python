@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_06_01_2021_16_57_[Default]" date="1609941463876" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_57_[Default]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 06/01/2021 16:57 [Default]" />
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/agents/plots/Running Average reward before training - DQN.png" />
+    <option name="AFTER_PATH" value="src/main/agents/plots/Running Average reward before training - DQN.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_57_[Default]/Running Average reward before training - DQN.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/agents/saved_models/dqn.zip" />
+    <option name="AFTER_PATH" value="src/main/agents/saved_models/dqn.zip" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_57_[Default]/dqn.zip" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/agents/plots/Running Average reward after training - DQN.png" />
+    <option name="AFTER_PATH" value="src/main/agents/plots/Running Average reward after training - DQN.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2021_16_57_[Default]/Running Average reward after training - DQN.png" />
+  </binary>
+</changelist>
