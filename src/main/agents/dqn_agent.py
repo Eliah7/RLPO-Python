@@ -24,20 +24,29 @@ def train_dqn(env, train_steps=2000):
     # env = Monitor(env, "./logs")
     model = DQN(MlpPolicy, env=env, _init_setup_model=True, verbose=1, exploration_fraction=0.1,
                 tensorboard_log=log_dir)
-    # evaluate before training
-    _, all_rewards = evaluate(model)
-    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")
+    # # evaluate before training
+    # _, all_rewards = evaluate(model)
+    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")
 
     start = time.time()
     model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
 
-    model.save("./saved_models/dqn")
+    model.save("./saved_models/dqn", cloudpickle=True)
 
     # evaluate after training
+    print("EVALUATING AGENT")
     start = time.time()
     _, all_rewards = evaluate(model)
+    end = time.time()
+    print("Running time per episode: {}".format((end - start) / 100))
+
+    print("From saved model")
+    model = DQN.load("./saved_models/dqn", env=env)
+
+    start = time.time()
+    _, all_rewards = evaluate(model, num_episodes=100)
     end = time.time()
     print("Running time per time step: {}".format((end - start) / 100))
 

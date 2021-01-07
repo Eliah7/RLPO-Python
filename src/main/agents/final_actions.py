@@ -10,6 +10,7 @@
 from stable_baselines import DQN, A2C, PPO2
 from src.main.util.model_utils import evaluate
 from src.main.env.environment import Environment
+import time
 
 
 def test_rl_agent(agent, environment):
@@ -25,11 +26,10 @@ if __name__ == '__main__':
     print("INPUTS: {}".format(obs))
     done = False
 
-    while not done:
-        action, _states = model.predict(obs)
-        next_obs, reward, done, info = env.step(action)
+    start = time.time()
+    _, all_rewards = evaluate(model, num_episodes=100)
+    end = time.time()
+    print("Running time per time step: {}".format((end - start) / 100))
 
-    if done:
-
-        print("OUPUT: {}".format(next_obs))
-        print("REWARD: {}".format(reward))
+    # print("OUTPUT: {}".format(next_obs))
+    # print("REWARD: {}".format(reward))

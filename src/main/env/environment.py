@@ -81,7 +81,7 @@ class Environment(gym.Env):
             self.num_actions += 1
 
         self.done = True
-        return obs, reward , self.done, {}
+        return obs, reward, self.done, {}
 
     def reset(self):
         # Reset the state of the environment to an initial state
@@ -165,7 +165,7 @@ class Environment(gym.Env):
 
         if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
             print("values of max and min outside range")
-            return -30
+            return -np.sum(self.load_data[:, 3])
 
         print(status_reward)    # divide by num_actions which is the number of episodes
         return status_reward

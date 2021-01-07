@@ -12,7 +12,7 @@
 
 # from stable_baselines.common.vec_env import DummyVecEnv
 # from stable_baselines.deepq.policies import MlpPolicy, CnnPolicy
-from stable_baselines.common.policies import MlpPolicy
+from stable_baselines.common.policies import MlpPolicy, ActorCriticPolicy
 from stable_baselines import DQN, A2C
 from src.main.env.environment import Environment
 # from stable_baselines.bench import Monitor
@@ -46,6 +46,15 @@ def train_a2c(env, train_steps=1000):
     end = time.time()
     print("Running time per time step: {}".format((end - start) / 100))
     # print(all_rewards)
+
+    print("From saved model")
+    model = A2C.load("./saved_models/dqn", env=env)
+    model.setup_model()
+
+    start = time.time()
+    _, all_rewards = evaluate(model, num_episodes=100)
+    end = time.time()
+    print("Running time per time step: {}".format((end - start) / 100))
 
     plot_moving_avg(np.array(all_rewards), title="Running Average reward after training")
 
