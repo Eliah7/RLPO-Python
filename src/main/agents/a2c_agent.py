@@ -8,8 +8,6 @@
 
 """
 
-
-
 # from stable_baselines.common.vec_env import DummyVecEnv
 # from stable_baselines.deepq.policies import MlpPolicy, CnnPolicy
 from stable_baselines.common.policies import MlpPolicy
@@ -25,14 +23,13 @@ import time
 def train_a2c(env, train_steps=1000):
     log_dir = "./tensorboard/"
 
-
     # # env = Monitor(env, "./logs")
-    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir)
+    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0)
     model.setup_model()
 
     # # evaluate before training
-    _, all_rewards = evaluate(model)
-    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - A2C")
+    # _, all_rewards = evaluate(model)
+    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - A2C")
 
     start = time.time()
     model.learn(total_timesteps=train_steps)

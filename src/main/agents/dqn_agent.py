@@ -25,8 +25,8 @@ def train_dqn(env, train_steps=2000):
     model = DQN(MlpPolicy, env=env, _init_setup_model=True, verbose=1, exploration_fraction=0.1,
                 tensorboard_log=log_dir)
     # evaluate before training
-    _, all_rewards = evaluate(model)
-    plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")
+    # _, all_rewards = evaluate(model)
+    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")
 
     start = time.time()
     model.learn(total_timesteps=train_steps)

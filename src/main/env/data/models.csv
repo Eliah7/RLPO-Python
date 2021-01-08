@@ -1,0 +1,7 @@
+Name,File,Type,Mva,Kva
+Solar      ,solar,Solar,,
+Battery    ,battery,Battery,,
+Bus33      ,bus33,Grid,100,12.66
+Kimweri    ,kimweri,Grid,0.1,0.4
+BBQ Village,bbq-village,Grid,0.315,0.4
+Abiudi,abiudi,Grid,0.2,0.4

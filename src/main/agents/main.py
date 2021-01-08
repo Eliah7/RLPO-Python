@@ -11,11 +11,12 @@
 from src.main.agents.a2c_agent import train_a2c
 from src.main.agents.dqn_agent import train_dqn
 from src.main.agents.ppo2_agent import train_ppo2
-from stable_baselines.common.vec_env import DummyVecEnv
+from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
 from src.main.env.environment import Environment
-
+import numpy as np
 
 if __name__ == '__main__':
+    np.seterr(all='raise')
     print("Enter the name of the agent: (eg. a2c, dqn, ppo2)")
     agent = input()
     print("Agent: {}".format(agent))
@@ -31,14 +32,15 @@ if __name__ == '__main__':
     state_type = input().lower()
     state_type = "discrete" if state_type == "" else state_type
 
-    print("Enter the load shedding percentage: ")
-    load_shedding = int(input())
+    # print("Enter the load shedding percentage: ")
+    # load_shedding = int(input())
 
     print("Training Steps: {}".format(train_steps))
     print("Training ... ")
 
-    # env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type=state_type)])
-    env = Environment(grid_name=grid_name, action_type=state_type, load_shedding=load_shedding)
+    env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type=state_type)])
+    #env = Environment(grid_name=grid_name, action_type=state_type)
+    env = VecCheckNan(env, raise_exception=True)
 
     if agent == "a2c":
         if train_steps == 0:

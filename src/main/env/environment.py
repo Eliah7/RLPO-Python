@@ -15,6 +15,8 @@ from src.main.util.binary_ops import *
 from src.main.util.java_utils import dlf_analyse
 from src.main.util.model_utils import *
 
+np.seterr(all='raise')
+
 class Environment(gym.Env):
     """Custom Environment that follows gym interface"""
     metadata = {'render.modes': ['human']}
@@ -25,12 +27,12 @@ class Environment(gym.Env):
     
             action_type: string ("continous" or "discrete")
     """
-    def __init__(self, grid_name="bus33", action_type="discrete", load_shedding=0):
+    def __init__(self, grid_name="bus33", action_type="discrete", load_shedding=100):
         super(Environment, self).__init__()
 
         self.grid_name = grid_name
         self.action_type = action_type
-        self.load_shedding = load_shedding
+        # self.load_shedding = load_shedding
 
         self.load_data, self.line_data = get_data_from_csv(grid_name)
 
@@ -40,7 +42,8 @@ class Environment(gym.Env):
 
         self.reward_range = spaces.Box(low=0, high=1000, shape=(1,)) #spaces.Box(np.array(0), np.array(100))
 
-        high = np.array([np.inf] * self.n_nodes)
+        high = np.array([10000] * self.n_nodes)
+        print(-high)
         self.observation_space = spaces.Box(-high, high)
 
         if action_type.lower() == "discrete":
@@ -48,7 +51,6 @@ class Environment(gym.Env):
         elif action_type.lower() == "continous":
             # self.action_space = spaces.Box(low=0,high=1, shape=(self.n_nodes, 1), dtype=np.int)
             self.action_space = spaces.MultiBinary(self.n_nodes)
-
         else:
             raise Exception("Action type: {} not implemented. Use 'discrete' or 'continous'")
 
@@ -63,6 +65,8 @@ class Environment(gym.Env):
     def step(self, action):
         # Execute one time step within the environment
         print("ACTION: {}".format(action))
+        self.load_data, self.line_data = get_data_from_csv(self.grid_name)
+        # print("LOAD: {}".format(self.load_data[:, 1]))
         obs = self.get_observation(action)
         reward = self.reward()
 
@@ -79,23 +83,20 @@ class Environment(gym.Env):
             self.done = False
             self.num_actions += 1
 
-        self.done = True
+        # self.done = True
         return obs, reward , self.done, {}
 
     def reset(self):
         # Reset the state of the environment to an initial state
         status = self.load_data[:, 3]
         self.load_data, self.line_data = get_data_from_csv(self.grid_name)
+        # print("Load data {}".format(self.load_data[:, 1]))
         self.load_data[:, 3] = status
         self.num_actions = 0
-        if self.load_shedding != 0:
-            ratio = np.random.randint(low=0, high=self.load_shedding)
-
-            if ratio > 0:
-                self.load_data[:, 1] *= (ratio / 100)
 
         self.done = False
 
+        print("OBSERVATIONS: {}".format(self.get_observation()))
         return self.get_observation()
 
     def get_observation(self, action=np.inf):
@@ -113,7 +114,13 @@ class Environment(gym.Env):
                 print("CURRENT STATE: " + str(self.load_data[:, 3]))
 
                 return self.current_state()
-        else:
+        elif self.action_type == "continous":
+            if not isinstance(action, np.ndarray):
+                if action == np.inf:
+                    return self.current_state()
+
+            print("ACTION AT OBSERVATION: {}".format(action))
+            print("CURRENT STATE: " + str(self.load_data[:, 3]))
             self.load_data[:, 3] = np.array(action)
             self.load_data[:, 3][0] = 1
             return self.current_state()
@@ -137,23 +144,12 @@ class Environment(gym.Env):
         return
 
     def current_state(self):
-        power_assigned = np.sum(self.load_data[:, 1] * self.load_data[:, 3])
-        sum_statuses = np.sum(self.load_data[:, 3])
-        sum_priorities = np.sum(self.load_data[:, 4])
-
-        # return np.array(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
         return self.load_data[:, 3]
 
     def reward(self):
-        # status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4
-        status_reward = (np.sum(
-            self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]) / np.sum(
-            self.load_data[:, 1]) * 100))
-        print(self.load_data[:, 1])
-        print(self.load_data[:, 3])
-        print(self.load_data[:, 4])
-        # print(self.load_data) #* self.load_data[:, 3] * np.square(self.load_data[:, 4]))# positive rewards
-        power_assigned = 1 - np.sum(self.load_data[:, 1] * self.load_data[:, 3]) ** 0.4
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
+        status_reward = np.sum(self.load_data[:, 3])
+        # status_reward = (np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]) / np.sum(self.load_data[:, 1]) * 100))
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 
@@ -164,10 +160,10 @@ class Environment(gym.Env):
 
         if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
             print("values of max and min outside range")
-            return -30
+            return -np.sum(self.load_data[:, 3])
 
         print(status_reward)    # divide by num_actions which is the number of episodes
-        return status_reward
+        return status_reward/10
 
     def power_assigned(self):
         return np.sum(self.load_data[:, 1] * self.load_data[:, 3])
