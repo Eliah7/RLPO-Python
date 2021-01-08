@@ -120,8 +120,9 @@ class Environment(gym.Env):
                     return self.current_state()
 
             print("ACTION AT OBSERVATION: {}".format(action))
-            print("CURRENT STATE: " + str(self.load_data[:, 3]))
+
             self.load_data[:, 3] = np.array(action)
+            print("CURRENT STATE: " + str(self.load_data[:, 3]))
             self.load_data[:, 3][0] = 1
             return self.current_state()
 
@@ -147,8 +148,8 @@ class Environment(gym.Env):
         return self.load_data[:, 3]
 
     def reward(self):
-        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]))
-        status_reward = np.sum(self.load_data[:, 3])
+        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4
+        # status_reward = np.sum(self.load_data[:, 3])
         # status_reward = (np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]) / np.sum(self.load_data[:, 1]) * 100))
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
@@ -160,7 +161,7 @@ class Environment(gym.Env):
 
         if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
             print("values of max and min outside range")
-            return -np.sum(self.load_data[:, 3])
+            return -np.sum(self.load_data[:, 3]) ** 0.4
 
         print(status_reward)    # divide by num_actions which is the number of episodes
         return status_reward/10

@@ -35,7 +35,7 @@ def train_a2c(env, train_steps=1000):
     model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
-    # model.save("./saved_models/a2c")
+    model.save("./saved_models/a2c")
 
     # evaluate after training
     start = time.time()
