@@ -32,6 +32,7 @@ class Environment(gym.Env):
 
         self.grid_name = grid_name
         self.action_type = action_type
+        self.current_reward = 0
         # self.load_shedding = load_shedding
 
         self.load_data, self.line_data = get_data_from_csv(grid_name)
@@ -68,7 +69,7 @@ class Environment(gym.Env):
         self.load_data, self.line_data = get_data_from_csv(self.grid_name)
         # print("LOAD: {}".format(self.load_data[:, 1]))
         obs = self.get_observation(action)
-        reward = self.reward()
+        reward = self.reward(action)
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
         power_values_from_dlf = np.array(power_values_from_dlf)
@@ -121,10 +122,18 @@ class Environment(gym.Env):
 
             print("ACTION AT OBSERVATION: {}".format(action))
 
-            self.load_data[:, 3] = np.array(action)
-            print("CURRENT STATE: " + str(self.load_data[:, 3]))
-            self.load_data[:, 3][0] = 1
-            return self.current_state()
+            print("OBSERVATION REWARD {}".format(self.calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4])))
+            print("CURRENT REWARD {}".format(self.current_reward))
+
+            if self.calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) > self.current_reward:  # do not allow a state with less priority
+                self.load_data[:, 3] = np.array(action)
+                print("CURRENT STATE: " + str(self.load_data[:, 3]))
+                print("PRIORITY: " + str(self.load_data[:, 4]))
+                self.load_data[:, 3][0] = 1
+                return self.current_state()
+            else:
+                return self.current_state()
+
 
     def act_from_num(self, action):
         if action == 0:
@@ -147,8 +156,17 @@ class Environment(gym.Env):
     def current_state(self):
         return self.load_data[:, 3]
 
-    def reward(self):
-        status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4
+    def reward(self, action):
+        # print("CURRENT REWARD {}".format(self.current_reward))
+        if self.calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) < self.current_reward: # do not allow a state with less priority
+            return self.calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) - self.current_reward
+
+        if np.sum(self.load_data[:, 1] * np.divide(self.load_data[:, 3], self.load_data[:, 4])) == 0.0:
+            return 0
+
+        status_reward = (1 / np.sum(self.load_data[:, 1] * np.divide(self.load_data[:, 3], self.load_data[:, 4]))) * 1000
+
+        # print(np.divide(self.load_data[:, 3], self.load_data[:, 4]))
         # status_reward = np.sum(self.load_data[:, 3])
         # status_reward = (np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4]) / np.sum(self.load_data[:, 1]) * 100))
 
@@ -161,10 +179,19 @@ class Environment(gym.Env):
 
         if not ((power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1)):
             print("values of max and min outside range")
-            return -np.sum(self.load_data[:, 3]) ** 0.4
+            return -(1 / np.sum(self.load_data[:, 1] * np.divide(self.load_data[:, 3], self.load_data[:, 4]))) * 1000
 
-        print(status_reward)    # divide by num_actions which is the number of episodes
+        print("STATUS REWARD: {}".format(status_reward))
+        self.current_reward = status_reward # divide by num_actions which is the number of episodes
         return status_reward/10
 
     def power_assigned(self):
         return np.sum(self.load_data[:, 1] * self.load_data[:, 3])
+
+    def calculate_reward(self, load, status, priority):
+        if np.sum(load * np.divide(status, priority)) == 0.0:
+            return 0
+
+        print(np.sum(load * np.divide(status, priority)))
+        print((1 / np.sum(load * np.divide(status, priority))) * 1000)
+        return (1 / np.sum(load * np.divide(status, priority))) * 1000
