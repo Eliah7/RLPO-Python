@@ -13,7 +13,7 @@ from src.main.env.environment import Environment
 from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
 
 if __name__ == '__main__':
-    env = DummyVecEnv([lambda: Environment(grid_name="bbq-village", action_type="continous")])
+    env = DummyVecEnv([lambda: Environment(grid_name="bus33", action_type="continous")])
     env = VecCheckNan(env, raise_exception=True)
 
     model = A2C.load("./saved_models/a2c", env=env)

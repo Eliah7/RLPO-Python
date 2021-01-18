@@ -24,7 +24,7 @@ def train_a2c(env, train_steps=1000):
     log_dir = "./tensorboard/"
 
     # # env = Monitor(env, "./logs")
-    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0)
+    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0, learning_rate=0.0001)
     model.setup_model()
 
     # # evaluate before training
@@ -51,9 +51,8 @@ if __name__ == '__main__':
 
     env = Environment()
     # # env = Monitor(env, "./logs")
-    model = A2C(MlpPolicy,env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir )
+    model = A2C(MlpPolicy,env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0, learning_rate=0.00001)
     model.setup_model()
-
 
     # # evaluate before training
     _, all_rewards = evaluate(model)
