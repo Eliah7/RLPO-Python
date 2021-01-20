@@ -27,7 +27,7 @@ def calculate_reward(status, load, priority):
     # print(np.sum(load * np.divide(status, priority)))
     # print((1 / np.sum(load * np.divide(status, priority))) * 1000)
     # return (1 / np.sum(load * np.divide(status, priority))) * 1000
-    return np.sum(status * priority)
+    return np.sum(status * np.square(priority))
     # return np.sum(load * status * np.square(priority)) ** 0.4
 
 
@@ -107,11 +107,11 @@ class Environment(gym.Env):
         print("**** EPISODE STARTS ...\n")
         if self.action_type == "continous":
             # Reset the state of the environment to an initial state
-            # status = self.load_data[:, 3]
+            status = self.load_data[:, 3]
             self.load_data, self.line_data = get_data_from_csv(self.grid_name)
-            self.current_reward = 0.0
+            # self.current_reward = 0.0
             # print("Load data {}".format(self.load_data[:, 1]))
-            # self.load_data[:, 3] = status
+            self.load_data[:, 3] = status
         else:
             # Reset the state of the environment to an initial state
             status = self.load_data[:, 3]
@@ -195,7 +195,7 @@ class Environment(gym.Env):
             if calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) < self.current_reward:
                 return calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) - self.current_reward
 
-        status_reward = np.sum(self.load_data[:, 3] * self.load_data[:, 4] )
+        status_reward = np.sum(self.load_data[:, 3] * np.square(self.load_data[:, 4]))
         # status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4
 
         if not (power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1):

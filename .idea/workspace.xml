@@ -2,141 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="Update dlf">
+      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_31/events.out.tfevents.1611159917.Elias-MBP-1022.lan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_32/events.out.tfevents.1611159994.Elias-MBP-1022.lan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_33/events.out.tfevents.1611160102.Elias-MBP-1022.lan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_34/events.out.tfevents.1611160155.Elias-MBP-1022.lan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_35/events.out.tfevents.1611160277.Elias-MBP-1022.lan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_36/events.out.tfevents.1611160321.Elias-MBP-1022.lan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/a2c.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/a2c.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_1/events.out.tfevents.1609233899.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_1/events.out.tfevents.1609233899.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_10/events.out.tfevents.1609253576.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_10/events.out.tfevents.1609253576.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_11/events.out.tfevents.1609253660.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_11/events.out.tfevents.1609253660.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_12/events.out.tfevents.1609254894.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_12/events.out.tfevents.1609254894.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_13/events.out.tfevents.1609255120.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_13/events.out.tfevents.1609255120.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_14/events.out.tfevents.1609255309.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_14/events.out.tfevents.1609255309.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_15/events.out.tfevents.1609255378.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_15/events.out.tfevents.1609255378.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_16/events.out.tfevents.1609255500.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_16/events.out.tfevents.1609255500.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_17/events.out.tfevents.1609255928.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_17/events.out.tfevents.1609255928.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_18/events.out.tfevents.1609256104.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_18/events.out.tfevents.1609256104.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_19/events.out.tfevents.1609256211.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_19/events.out.tfevents.1609256211.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_2/events.out.tfevents.1609234829.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_2/events.out.tfevents.1609234829.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_20/events.out.tfevents.1609256390.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_20/events.out.tfevents.1609256390.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_21/events.out.tfevents.1609256504.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_21/events.out.tfevents.1609256504.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_22/events.out.tfevents.1609256603.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_22/events.out.tfevents.1609256603.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_23/events.out.tfevents.1609256797.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_23/events.out.tfevents.1609256797.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_24/events.out.tfevents.1609260111.Elias-MBP-1022.lan" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_24/events.out.tfevents.1609260111.Elias-MBP-1022.lan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_25/events.out.tfevents.1609313786.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_25/events.out.tfevents.1609313786.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_26/events.out.tfevents.1609323376.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_26/events.out.tfevents.1609323376.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_27/events.out.tfevents.1609323932.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_27/events.out.tfevents.1609323932.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_28/events.out.tfevents.1609398439.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_28/events.out.tfevents.1609398439.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_29/events.out.tfevents.1609926890.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_29/events.out.tfevents.1609926890.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_3/events.out.tfevents.1609249470.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_3/events.out.tfevents.1609249470.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_30/events.out.tfevents.1609927361.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_30/events.out.tfevents.1609927361.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_31/events.out.tfevents.1609927481.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_31/events.out.tfevents.1609927481.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_32/events.out.tfevents.1610026472.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_32/events.out.tfevents.1610026472.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_33/events.out.tfevents.1610027037.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_33/events.out.tfevents.1610027037.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_34/events.out.tfevents.1610027529.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_34/events.out.tfevents.1610027529.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_35/events.out.tfevents.1610029283.Elias-MBP-1022.lan" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_35/events.out.tfevents.1610029283.Elias-MBP-1022.lan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_36/events.out.tfevents.1610029633.Elias-MBP-1022.lan" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_36/events.out.tfevents.1610029633.Elias-MBP-1022.lan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_37/events.out.tfevents.1610030891.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_37/events.out.tfevents.1610030891.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_38/events.out.tfevents.1610030968.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_38/events.out.tfevents.1610030968.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_39/events.out.tfevents.1610031122.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_39/events.out.tfevents.1610031122.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_4/events.out.tfevents.1609249869.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_4/events.out.tfevents.1609249869.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_40/events.out.tfevents.1610031166.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_40/events.out.tfevents.1610031166.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_41/events.out.tfevents.1610089876.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_41/events.out.tfevents.1610089876.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_42/events.out.tfevents.1610090295.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_42/events.out.tfevents.1610090295.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_43/events.out.tfevents.1610091737.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_43/events.out.tfevents.1610091737.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_44/events.out.tfevents.1610091910.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_44/events.out.tfevents.1610091910.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_45/events.out.tfevents.1610091985.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_45/events.out.tfevents.1610091985.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_46/events.out.tfevents.1610092077.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_46/events.out.tfevents.1610092077.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_47/events.out.tfevents.1610092878.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_47/events.out.tfevents.1610092878.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_48/events.out.tfevents.1610093160.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_48/events.out.tfevents.1610093160.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_49/events.out.tfevents.1610093217.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_49/events.out.tfevents.1610093217.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_5/events.out.tfevents.1609251094.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_5/events.out.tfevents.1609251094.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_50/events.out.tfevents.1610093420.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_50/events.out.tfevents.1610093420.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_51/events.out.tfevents.1610093648.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_51/events.out.tfevents.1610093648.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_52/events.out.tfevents.1610093981.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_52/events.out.tfevents.1610093981.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_53/events.out.tfevents.1610095026.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_53/events.out.tfevents.1610095026.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_54/events.out.tfevents.1610095403.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_54/events.out.tfevents.1610095403.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_55/events.out.tfevents.1610095678.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_55/events.out.tfevents.1610095678.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_56/events.out.tfevents.1610097411.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_56/events.out.tfevents.1610097411.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_57/events.out.tfevents.1610097688.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_57/events.out.tfevents.1610097688.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_58/events.out.tfevents.1610097746.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_58/events.out.tfevents.1610097746.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_59/events.out.tfevents.1610098624.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_59/events.out.tfevents.1610098624.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_6/events.out.tfevents.1609251157.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_6/events.out.tfevents.1609251157.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_60/events.out.tfevents.1610367529.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_60/events.out.tfevents.1610367529.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_61/events.out.tfevents.1610367608.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_61/events.out.tfevents.1610367608.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_62/events.out.tfevents.1610369311.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_62/events.out.tfevents.1610369311.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_63/events.out.tfevents.1610369448.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_63/events.out.tfevents.1610369448.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_64/events.out.tfevents.1610369737.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_64/events.out.tfevents.1610369737.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_65/events.out.tfevents.1610369910.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_65/events.out.tfevents.1610369910.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_66/events.out.tfevents.1610369945.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_66/events.out.tfevents.1610369945.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_67/events.out.tfevents.1610370130.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_67/events.out.tfevents.1610370130.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_68/events.out.tfevents.1610371127.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_68/events.out.tfevents.1610371127.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_69/events.out.tfevents.1610371409.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_69/events.out.tfevents.1610371409.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_7/events.out.tfevents.1609252548.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_7/events.out.tfevents.1609252548.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_70/events.out.tfevents.1610371599.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_70/events.out.tfevents.1610371599.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_71/events.out.tfevents.1610372096.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_71/events.out.tfevents.1610372096.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_72/events.out.tfevents.1610372141.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_72/events.out.tfevents.1610372141.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_73/events.out.tfevents.1610372194.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_73/events.out.tfevents.1610372194.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_74/events.out.tfevents.1610372297.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_74/events.out.tfevents.1610372297.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_75/events.out.tfevents.1610372371.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_75/events.out.tfevents.1610372371.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_76/events.out.tfevents.1610372834.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_76/events.out.tfevents.1610372834.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_77/events.out.tfevents.1610373015.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_77/events.out.tfevents.1610373015.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_78/events.out.tfevents.1610373399.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_78/events.out.tfevents.1610373399.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_79/events.out.tfevents.1610373503.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_79/events.out.tfevents.1610373503.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_8/events.out.tfevents.1609253158.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_8/events.out.tfevents.1609253158.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_80/events.out.tfevents.1610373548.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_80/events.out.tfevents.1610373548.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_9/events.out.tfevents.1609253202.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/A2C_9/events.out.tfevents.1609253202.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_1/events.out.tfevents.1609231920.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_1/events.out.tfevents.1609231920.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_10/events.out.tfevents.1609257636.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_10/events.out.tfevents.1609257636.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_11/events.out.tfevents.1609257982.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_11/events.out.tfevents.1609257982.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_12/events.out.tfevents.1609259000.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_12/events.out.tfevents.1609259000.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_13/events.out.tfevents.1609259120.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_13/events.out.tfevents.1609259120.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_14/events.out.tfevents.1609259165.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_14/events.out.tfevents.1609259165.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_15/events.out.tfevents.1609259204.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_15/events.out.tfevents.1609259204.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_16/events.out.tfevents.1609259261.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_16/events.out.tfevents.1609259261.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_17/events.out.tfevents.1609259327.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_17/events.out.tfevents.1609259327.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_18/events.out.tfevents.1609260420.Elias-MBP-1022.lan" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_18/events.out.tfevents.1609260420.Elias-MBP-1022.lan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_19/events.out.tfevents.1609313666.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_19/events.out.tfevents.1609313666.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_2/events.out.tfevents.1609232297.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_2/events.out.tfevents.1609232297.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_20/events.out.tfevents.1609314347.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_20/events.out.tfevents.1609314347.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_21/events.out.tfevents.1609314971.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_21/events.out.tfevents.1609314971.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_22/events.out.tfevents.1609324750.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_22/events.out.tfevents.1609324750.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_22/events.out.tfevents.1609341963.DESKTOP-EGCPFG0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_22/events.out.tfevents.1609341963.DESKTOP-EGCPFG0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_23/events.out.tfevents.1609344197.DESKTOP-EGCPFG0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_23/events.out.tfevents.1609344197.DESKTOP-EGCPFG0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_24/events.out.tfevents.1609344396.DESKTOP-EGCPFG0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_24/events.out.tfevents.1609344396.DESKTOP-EGCPFG0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_25/events.out.tfevents.1609344618.DESKTOP-EGCPFG0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_25/events.out.tfevents.1609344618.DESKTOP-EGCPFG0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_26/events.out.tfevents.1609344858.DESKTOP-EGCPFG0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_26/events.out.tfevents.1609344858.DESKTOP-EGCPFG0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_27/events.out.tfevents.1609344956.DESKTOP-EGCPFG0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_27/events.out.tfevents.1609344956.DESKTOP-EGCPFG0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_28/events.out.tfevents.1609924533.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_28/events.out.tfevents.1609924533.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_29/events.out.tfevents.1609928975.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_29/events.out.tfevents.1609928975.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_3/events.out.tfevents.1609232325.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_3/events.out.tfevents.1609232325.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_30/events.out.tfevents.1609929109.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_30/events.out.tfevents.1609929109.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_31/events.out.tfevents.1609929424.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_31/events.out.tfevents.1609929424.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_32/events.out.tfevents.1609930060.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_32/events.out.tfevents.1609930060.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_33/events.out.tfevents.1609930876.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_33/events.out.tfevents.1609930876.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_34/events.out.tfevents.1609931052.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_34/events.out.tfevents.1609931052.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_35/events.out.tfevents.1609931673.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_35/events.out.tfevents.1609931673.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_36/events.out.tfevents.1609931767.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_36/events.out.tfevents.1609931767.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_37/events.out.tfevents.1609931855.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_37/events.out.tfevents.1609931855.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_38/events.out.tfevents.1609933548.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_38/events.out.tfevents.1609933548.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_39/events.out.tfevents.1609934645.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_39/events.out.tfevents.1609934645.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_4/events.out.tfevents.1609232428.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_4/events.out.tfevents.1609232428.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_40/events.out.tfevents.1609934865.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_40/events.out.tfevents.1609934865.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_41/events.out.tfevents.1609939442.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_41/events.out.tfevents.1609939442.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_42/events.out.tfevents.1610032664.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_42/events.out.tfevents.1610032664.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_5/events.out.tfevents.1609240678.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_5/events.out.tfevents.1609240678.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_6/events.out.tfevents.1609240783.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_6/events.out.tfevents.1609240783.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_7/events.out.tfevents.1609241534.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_7/events.out.tfevents.1609241534.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_8/events.out.tfevents.1609256904.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_8/events.out.tfevents.1609256904.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/DQN_9/events.out.tfevents.1609256999.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/DQN_9/events.out.tfevents.1609256999.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/PPO2_1/events.out.tfevents.1609235359.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/PPO2_1/events.out.tfevents.1609235359.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/PPO2_2/events.out.tfevents.1609316731.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/PPO2_2/events.out.tfevents.1609316731.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/PPO2_3/events.out.tfevents.1609927800.Elias-MBP-1022" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/PPO2_3/events.out.tfevents.1609927800.Elias-MBP-1022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/PPO2_4/events.out.tfevents.1610031347.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/PPO2_4/events.out.tfevents.1610031347.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/PPO2_5/events.out.tfevents.1610031437.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/PPO2_5/events.out.tfevents.1610031437.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/PPO2_6/events.out.tfevents.1610031905.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/PPO2_6/events.out.tfevents.1610031905.Elias-MacBook-Pro-1022.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/tensorboard/PPO2_7/events.out.tfevents.1610031971.Elias-MacBook-Pro-1022.local" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/old_tensoboard/PPO2_7/events.out.tfevents.1610031971.Elias-MacBook-Pro-1022.local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/util/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/model_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -154,31 +30,22 @@
     <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1609241463250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$random_agent.coverage" NAME="random_agent Coverage Results" MODIFIED="1604921067789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$ppo2_agent.coverage" NAME="ppo2_agent Coverage Results" MODIFIED="1609235338371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1610966801842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1611160303297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$java_utils.coverage" NAME="java_utils Coverage Results" MODIFIED="1604661187686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/util" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_environment_tests_TestEnvironment_testCreateEnvironment.coverage" NAME="Unittests for environment_tests.TestEnvironment.testCreateEnvironment Coverage Results" MODIFIED="1604995882735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$pso_agent_test.coverage" NAME="pso_agent_test Coverage Results" MODIFIED="1604484158756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent.coverage" NAME="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent Coverage Results" MODIFIED="1604485206330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$final_actions.coverage" NAME="final_actions Coverage Results" MODIFIED="1610100211039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
+    <SUITE FILE_PATH="coverage/RLPO_Python$final_actions.coverage" NAME="final_actions Coverage Results" MODIFIED="1611160426558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_max_number_for_binary_digit_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count Coverage Results" MODIFIED="1603809685552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps Coverage Results" MODIFIED="1603817979498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="environment.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+            <state relative-caret-position="179">
+              <caret line="155" column="14" lean-forward="true" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
               <folding>
                 <element signature="e#153#163#0" expanded="true" />
               </folding>
@@ -191,11 +58,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file leaf-file-name="bus33-bd.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-bd.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="26" column="107" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -212,22 +88,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bbq-village-bd.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv">
+      <file leaf-file-name="final_actions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+            <state relative-caret-position="300">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <element signature="e#153#196#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="final_actions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
+      <file leaf-file-name="model_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
-                <element signature="e#153#196#0" expanded="true" />
+                <element signature="e#153#171#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,8 +115,8 @@
       <file leaf-file-name="dtypes.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="534" selection-start-line="534" selection-end-line="534" />
+            <state relative-caret-position="158">
+              <caret line="529" selection-start-line="529" selection-end-line="529" />
             </state>
           </provider>
         </entry>
@@ -326,7 +205,6 @@
         <option value="$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv" />
         <option value="$PROJECT_DIR$/src/main/env/data/models.csv" />
         <option value="$PROJECT_DIR$/src/main/env/data/bus33-ld.csv" />
-        <option value="$PROJECT_DIR$/src/main/util/model_utils.py" />
         <option value="$PROJECT_DIR$/src/main/env/data.py" />
         <option value="$PROJECT_DIR$/src/main/env/data/bus33-bd.csv" />
         <option value="$PROJECT_DIR$/src/main/agents/ddpg.py" />
@@ -334,8 +212,9 @@
         <option value="$PROJECT_DIR$/src/main/agents/dqn_agent.py" />
         <option value="$PROJECT_DIR$/src/main/agents/main.py" />
         <option value="$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv" />
-        <option value="$PROJECT_DIR$/src/main/agents/final_actions.py" />
         <option value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
+        <option value="$PROJECT_DIR$/src/main/agents/final_actions.py" />
+        <option value="$PROJECT_DIR$/src/main/util/model_utils.py" />
         <option value="$PROJECT_DIR$/src/main/env/environment.py" />
       </list>
     </option>
@@ -346,7 +225,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="829" />
@@ -389,6 +268,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
@@ -445,7 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.final_actions">
     <configuration name="dqn_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -566,8 +453,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.final_actions" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.pso_agent" />
         <item itemvalue="Python.dqn_agent" />
         <item itemvalue="Python.ppo2_agent" />
@@ -638,20 +525,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50143063" side_tool="true" weight="0.28242424" />
-      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.6334459" side_tool="true" visible="true" weight="0.34120172" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.60545456" side_tool="true" visible="true" weight="0.34120172" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.28242424" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.28142077" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928468" weight="0.3272727" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32848486" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.22060606" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.24863388" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983108" visible="true" weight="0.14949928" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.36655405" visible="true" weight="0.34120172" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.39454547" visible="true" weight="0.34120172" />
       <window_info id="Structure" order="1" sideWeight="0.5016892" side_tool="true" weight="0.14949928" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -777,16 +665,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/env/data/abiudi-ld.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/env/data/models.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-ld.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-          <folding>
-            <element signature="e#153#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-ld.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -954,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-bd.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -972,23 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#153#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="534" selection-start-line="534" selection-end-line="534" />
         </state>
       </provider>
     </entry>
@@ -1019,17 +873,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="529" selection-start-line="529" selection-end-line="529" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="e#153#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="e#153#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-bd.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="26" column="107" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        <state relative-caret-position="179">
+          <caret line="155" column="14" lean-forward="true" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
           <folding>
             <element signature="e#153#163#0" expanded="true" />
           </folding>
