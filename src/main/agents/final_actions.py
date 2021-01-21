@@ -15,7 +15,7 @@ from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
 if __name__ == '__main__':
     env = DummyVecEnv([lambda: Environment(grid_name="bus33", action_type="continous")])
     env = VecCheckNan(env, raise_exception=True)
-
-    model = A2C.load("./saved_models/a2c", env=env)
-
+    model: A2C = A2C.load("./saved_models/a2c", env=env)
+    # model: PPO2 = PPO2.load("./saved_models/ppo2", env=env)
+    # model: DQN = DQN.load("./saved_models/dqn", env=env)
     evaluate(model)

@@ -10,7 +10,7 @@
 
 # from stable_baselines.common.vec_env import DummyVecEnv
 # from stable_baselines.deepq.policies import MlpPolicy, CnnPolicy
-from stable_baselines.common.policies import MlpPolicy
+from stable_baselines.common.policies import MlpPolicy, LstmPolicy
 from stable_baselines import DQN, A2C
 from src.main.env.environment import Environment
 # from stable_baselines.bench import Monitor
@@ -24,7 +24,7 @@ def train_a2c(env, train_steps=1000):
     log_dir = "./tensorboard/"
 
     # # env = Monitor(env, "./logs")
-    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0, learning_rate=0.0001)
+    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0, learning_rate=0.5)
     model.setup_model()
 
     # # evaluate before training

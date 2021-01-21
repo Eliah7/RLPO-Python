@@ -10,7 +10,7 @@
 import numpy as np
 import pandas as pd
 
-def evaluate(agent_model, num_episodes=100):
+def evaluate(agent_model, num_episodes=10):
     """
     Evaluate a RL agent
     :param model: (BaseRLModel object) the RL Agent
