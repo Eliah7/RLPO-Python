@@ -27,8 +27,8 @@ def calculate_reward(status, load, priority):
     # print(np.sum(load * np.divide(status, priority)))
     # print((1 / np.sum(load * np.divide(status, priority))) * 1000)
     # return (1 / np.sum(load * np.divide(status, priority))) * 1000
-    return np.sum(status * np.square(priority))
-    # return np.sum(load * status * np.square(priority)) ** 0.4
+    # return np.sum(status * np.square(priority))
+     return np.sum(load * status * np.square(priority)) ** 0.4
 
 
 class Environment(gym.Env):
@@ -186,16 +186,18 @@ class Environment(gym.Env):
         return self.load_data[:, 3]
 
     def reward(self, action):
+
+
+        if self.action_type == "continous":
+            if calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) < self.current_reward:
+                return calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) - self.current_reward
+
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 
         power_values_from_dlf = np.array(power_values_from_dlf)
         print(power_values_from_dlf)
         print("MIN VOL: {}".format(power_values_from_dlf.min()))
         print("MAX VOL: {}".format(power_values_from_dlf.max()))
-
-        if self.action_type == "continous":
-            if calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) < self.current_reward:
-                return calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) - self.current_reward
 
         status_reward = np.sum(self.load_data[:, 3] * np.square(self.load_data[:, 4]))
         # status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4

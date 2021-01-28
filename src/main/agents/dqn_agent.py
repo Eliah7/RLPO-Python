@@ -20,10 +20,11 @@ import time
 def train_dqn(env, train_steps=2000):
     log_dir = "./tensorboard/"
     os.makedirs(log_dir, exist_ok=True)
-
+    gamma = 0
+    learning_rate = 0.005
     # env = Monitor(env, "./logs")
     model = DQN(MlpPolicy, env=env, _init_setup_model=True, verbose=1, exploration_fraction=0.1,
-                tensorboard_log=log_dir)
+                tensorboard_log=log_dir,learning_rate=learning_rate, gamma=gamma)
     # evaluate before training
     # _, all_rewards = evaluate(model)
     # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")
@@ -33,7 +34,7 @@ def train_dqn(env, train_steps=2000):
     end = time.time()
     print("Training Time: {}".format(end - start))
 
-    model.save("./saved_models/dqn")
+    model.save("./saved_models/dqn_learning_rate{}_gamma{}".format(learning_rate, gamma))
 
     # evaluate after training
     start = time.time()
@@ -48,11 +49,11 @@ if __name__ == '__main__':
     log_dir = "./tensorboard/"
     os.makedirs(log_dir, exist_ok=True)
 
-    grid_name = "bbq-village"
+    grid_name = "bus33"
     env = Environment(grid_name=grid_name)
 
     # env = Monitor(env, "./logs")
-    model = DQN(MlpPolicy,env=env, _init_setup_model=True, verbose=1, exploration_fraction=0.1, tensorboard_log=log_dir)
+    model = DQN(MlpPolicy,env=env, _init_setup_model=True, verbose=1, exploration_fraction=0.1, tensorboard_log=log_dir, gamma=0, learning_rate=0.005)
     # evaluate before training
     _, all_rewards = evaluate(model)
     plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - DQN")

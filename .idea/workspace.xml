@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="Update dlf">
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_39/events.out.tfevents.1611050395.DESKTOP-EGCPFG0" afterDir="false" />
+    <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="working rl">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_14_57_[Default]/events.out.tfevents.1611050395.DESKTOP-EGCPFG0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_14_57_[Default]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_14_57__Default_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/final_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/final_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - PPO2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - PPO2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/a2c.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/a2c.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/env/data/abiudi-bd.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/data/abiudi-bd.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/env/data/bus33-bd.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/data/bus33-bd.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/util/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/model_utils.py" afterDir="false" />
     </list>
@@ -203,6 +211,9 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/env/data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/agents/old_tensoboard" />
       <recent name="$PROJECT_DIR$/src/main/agents/final results/a2c" />
@@ -210,11 +221,29 @@
       <recent name="$PROJECT_DIR$/src/main/agents/final results/dqn" />
       <recent name="$PROJECT_DIR$/src/main/agents" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/env/data" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.final_actions">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="a2c_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RLPO-Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/agents" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dqn_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,28 +310,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ppo2_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RLPO-Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/agents" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="pso_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -343,19 +350,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.dqn_agent" />
-      <item itemvalue="Python.ppo2_agent" />
       <item itemvalue="Python.pso_agent" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.final_actions" />
       <item itemvalue="Python tests.pso_agent_test" />
+      <item itemvalue="Python.a2c_agent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.final_actions" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.pso_agent" />
-        <item itemvalue="Python.ppo2_agent" />
+        <item itemvalue="Python.final_actions" />
         <item itemvalue="Python.dqn_agent" />
+        <item itemvalue="Python.a2c_agent" />
+        <item itemvalue="Python.pso_agent" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +385,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609345303402</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="working rl">
+      <created>1611248528174</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611248528174</updated>
+    </task>
+    <task id="LOCAL-00003" summary="working rl">
+      <created>1611248574980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611248574980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -471,7 +492,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update dlf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update dlf" />
+    <MESSAGE value="working rl" />
+    <option name="LAST_COMMIT_MESSAGE" value="working rl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

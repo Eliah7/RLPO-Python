@@ -23,8 +23,10 @@ import time
 def train_a2c(env, train_steps=1000):
     log_dir = "./tensorboard/"
 
+    gamma = 0
+    learning_rate = 0.005
     # # env = Monitor(env, "./logs")
-    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0, learning_rate=0.5)
+    model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=gamma, learning_rate=learning_rate)
     model.setup_model()
 
     # # evaluate before training
@@ -35,7 +37,8 @@ def train_a2c(env, train_steps=1000):
     model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
-    model.save("./saved_models/a2c")
+
+    model.save("./saved_models/a2c_learning_rate{}_gamma{}".format(learning_rate, gamma))
 
     # evaluate after training
     start = time.time()
@@ -51,7 +54,7 @@ if __name__ == '__main__':
 
     env = Environment()
     # # env = Monitor(env, "./logs")
-    model = A2C(MlpPolicy,env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0, learning_rate=0.00001)
+    model = A2C(MlpPolicy,env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=0, learning_rate=0.05)
     model.setup_model()
 
     # # evaluate before training

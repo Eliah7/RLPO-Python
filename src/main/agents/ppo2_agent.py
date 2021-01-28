@@ -23,17 +23,19 @@ import time
 def train_ppo2(env, train_steps=20000):
     log_dir = "./tensorboard/"
     # env = Monitor(env, "./logs")
-    model = PPO2(MlpPolicy, env=env, _init_setup_model=True, verbose=1, tensorboard_log=log_dir)
+    gamma = 0
+    learning_rate = 0.0005
+    model = PPO2(MlpPolicy, env=env, _init_setup_model=True, verbose=1, tensorboard_log=log_dir, learning_rate=learning_rate, gamma=gamma)
 
     # evaluate before training
     # _, all_rewards = evaluate(model)
-    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - PPO2")
+    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - PPO2")-
 
     start = time.time()
     model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
-    model.save("./saved_models/ppo2")
+    model.save("./saved_models/ppo2_learning_rate{}_gamma{}".format(learning_rate, gamma))
 
     # evaluate after training
     start = time.time()
