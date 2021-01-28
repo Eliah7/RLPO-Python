@@ -17,10 +17,11 @@ from stable_baselines import PPO2
 from src.main.util.graph_utils import *
 from src.main.util.model_utils import *
 from src.main.env.environment import Environment
+import tensorflow as tf
 
 import time
 
-def train_ppo2(env, train_steps=20000):
+def train_ppo2(env, grid_name, train_steps=20000):
     log_dir = "./tensorboard/"
     # env = Monitor(env, "./logs")
     gamma = 0
@@ -35,7 +36,7 @@ def train_ppo2(env, train_steps=20000):
     model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
-    model.save("./saved_models/ppo2_learning_rate{}_gamma{}".format(learning_rate, gamma))
+    model.save("./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma))
 
     # evaluate after training
     start = time.time()

@@ -20,7 +20,7 @@ from src.main.util.model_utils import *
 
 import time
 
-def train_a2c(env, train_steps=1000):
+def train_a2c(env, grid_name, train_steps=1000):
     log_dir = "./tensorboard/"
 
     gamma = 0
@@ -38,13 +38,14 @@ def train_a2c(env, train_steps=1000):
     end = time.time()
     print("Training Time: {}".format(end - start))
 
-    model.save("./saved_models/a2c_learning_rate{}_gamma{}".format(learning_rate, gamma))
+    model.save("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma))
 
     # evaluate after training
     start = time.time()
     _, all_rewards = evaluate(model)
     end = time.time()
     print("Running time per time step: {}".format((end - start) / 100))
+    # plot_moving_avg(np.array(model.rewards_ph), title="Running Average reward during training")
     # print(all_rewards)
 
     plot_moving_avg(np.array(all_rewards), title="Running Average reward after training")
