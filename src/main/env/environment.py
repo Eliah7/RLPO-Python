@@ -19,16 +19,7 @@ np.seterr(all='raise')
 
 
 def calculate_reward(status, load, priority):
-    # if np.sum(load * np.divide(status, priority)) == 0.0:
-    #     return 0
-
-    # print("LOAD: {}".format(load))
-    # print("DIVIDE: {}".format(np.divide(status, priority)))
-    # print(np.sum(load * np.divide(status, priority)))
-    # print((1 / np.sum(load * np.divide(status, priority))) * 1000)
-    # return (1 / np.sum(load * np.divide(status, priority))) * 1000
-    # return np.sum(status * np.square(priority))
-     return np.sum(load * status * np.square(priority)) ** 0.4
+     return np.sum(load * status * np.square(priority)) ** 0.5
 
 
 class Environment(gym.Env):
@@ -147,13 +138,14 @@ class Environment(gym.Env):
                 if action == np.inf:
                     return self.current_state()
 
-            print("OBSERVATION REWARD {}".format(
+            print("ACTION REWARD {}".format(
                     calculate_reward(np.array(action), self.load_data[:, 1], self.load_data[:, 4])))
-            print("CURRENT REWARD {}".format(self.current_reward))
+            print("OBSERVATION REWARD {}".format(self.current_reward))
 
             print("PRIORITY: " + str(self.load_data[:, 4]))
 
             if calculate_reward(np.array(action), self.load_data[:, 1], self.load_data[:, 4]) > self.current_reward:  # do not allow a state with less priority
+                print("************")
                 self.load_data[:, 3] = np.array(action)
 
                 self.load_data[:, 3][0] = 1
@@ -185,12 +177,14 @@ class Environment(gym.Env):
     def current_state(self):
         return self.load_data[:, 3]
 
+    def restored_load_percentage(self):
+        load_data, line_data = get_data_from_csv(self.grid_name)
+        return np.sum(load_data[:, 1][(self.load_data[:, 3] == 1)] / np.sum(load_data[:, 1])) * 100
+
     def reward(self, action):
-
-
         if self.action_type == "continous":
-            if calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) < self.current_reward:
-                return calculate_reward(np.array(action), self.load_data[:, 3], self.load_data[:, 4]) - self.current_reward
+            if calculate_reward(np.array(action), self.load_data[:, 1], self.load_data[:, 4]) < self.current_reward:
+                return calculate_reward(np.array(action), self.load_data[:, 1], self.load_data[:, 4]) - self.current_reward
 
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 
@@ -199,7 +193,7 @@ class Environment(gym.Env):
         print("MIN VOL: {}".format(power_values_from_dlf.min()))
         print("MAX VOL: {}".format(power_values_from_dlf.max()))
 
-        status_reward = np.sum(self.load_data[:, 3] * np.square(self.load_data[:, 4]))
+        status_reward = calculate_reward(self.load_data[:, 3], self.load_data[:, 1], self.load_data[:, 4])#  np.sum(self.load_data[:, 3] * np.square(self.load_data[:, 4]))
         # status_reward = np.sum(self.load_data[:, 1] * self.load_data[:, 3] * np.square(self.load_data[:, 4])) ** 0.4
 
         if not (power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1):
@@ -207,6 +201,7 @@ class Environment(gym.Env):
             return -np.sum(self.load_data[:, 3])
 
         print("STATUS REWARD: {}".format(status_reward))
+        print("RESTORED LOAD: {}%".format(self.restored_load_percentage()))
         self.current_reward = status_reward # divide by num_actions which is the number of episodes
         return status_reward
 

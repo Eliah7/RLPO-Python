@@ -30,11 +30,11 @@ if __name__ == '__main__':
     model_no = int(input())
 
     if model_no == 1:
-        model: DQN = DQN.load("./saved_models/dqn_learning_rate{}_gamma{}".format(learning_rate, gamma), env=env)
+        model: DQN = DQN.load("./saved_models/dqn_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
     elif model_no == 2:
-        model: PPO2 = PPO2.load("./saved_models/ppo2_learning_rate{}_gamma{}".format(learning_rate, gamma), env=env)
+        model: PPO2 = PPO2.load("./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
     elif model_no == 3:
-        model: A2C = A2C.load("./saved_models/a2c_learning_rate{}_gamma{}".format(learning_rate, gamma), env=env)
+        model: A2C = A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
     else:
         raise Exception('Choose valid model')
 

@@ -17,7 +17,7 @@ import os
 
 import time
 
-def train_dqn(env, train_steps=2000):
+def train_dqn(env, grid_name, train_steps=2000):
     log_dir = "./tensorboard/"
     os.makedirs(log_dir, exist_ok=True)
     gamma = 0
@@ -33,8 +33,8 @@ def train_dqn(env, train_steps=2000):
     model.learn(total_timesteps=train_steps)
     end = time.time()
     print("Training Time: {}".format(end - start))
-
-    model.save("./saved_models/dqn_learning_rate{}_gamma{}".format(learning_rate, gamma))
+    # plot_moving_avg(np.array(model.rewards_ph), title="Running Average reward during training")
+    model.save("./saved_models/dqn_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma))
 
     # evaluate after training
     start = time.time()

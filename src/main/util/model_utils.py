@@ -43,6 +43,7 @@ def evaluate(agent_model, num_episodes=10):
         print("BEST ACTION: {}".format(max_action))
         print("BEST REWARD: {}".format(max_reward))
 
+
         all_episode_rewards.append(sum(episode_rewards))
 
     mean_episode_reward = np.mean(all_episode_rewards)

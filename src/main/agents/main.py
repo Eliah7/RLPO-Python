@@ -46,17 +46,17 @@ if __name__ == '__main__':
         if train_steps == 0:
             train_a2c(env)
         else:
-            train_a2c(env, train_steps=train_steps)
+            train_a2c(env, grid_name, train_steps=train_steps)
     elif agent == "dqn":
         if train_steps == 0:
             train_dqn(env)
         else:
-            train_dqn(env, train_steps=train_steps)
+            train_dqn(env, grid_name, train_steps=train_steps)
     elif agent == "ppo2":
         if train_steps == 0:
             train_ppo2(env)
         else:
-            train_ppo2(env, train_steps=train_steps)
+            train_ppo2(env, grid_name, train_steps=train_steps)
     # elif agent == "ddpg":
     #     if train_steps == 0:
     #         train_ddpg(grid_name)
