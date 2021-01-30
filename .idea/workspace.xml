@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="Update dlf">
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_31/events.out.tfevents.1611159917.Elias-MBP-1022.lan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_32/events.out.tfevents.1611159994.Elias-MBP-1022.lan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_33/events.out.tfevents.1611160102.Elias-MBP-1022.lan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_34/events.out.tfevents.1611160155.Elias-MBP-1022.lan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_35/events.out.tfevents.1611160277.Elias-MBP-1022.lan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/agents/tensorboard/A2C_36/events.out.tfevents.1611160321.Elias-MBP-1022.lan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/a2c.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/a2c.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/util/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/model_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,21 +31,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="environment.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="155" column="14" lean-forward="true" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
+            <state relative-caret-position="2235">
+              <caret line="155" column="14" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
               <folding>
                 <element signature="e#153#163#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="bus33-bd.csv" pinned="false" current-in-tab="false">
@@ -67,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="107" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="126" />
+            <state relative-caret-position="194">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -79,7 +64,7 @@
       <file leaf-file-name="java_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/util/java_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="465">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#154#195#0" expanded="true" />
@@ -91,7 +76,7 @@
       <file leaf-file-name="final_actions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="255">
               <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
               <folding>
                 <element signature="e#153#196#0" expanded="true" />
@@ -103,7 +88,7 @@
       <file leaf-file-name="model_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="165">
               <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
                 <element signature="e#153#171#0" expanded="true" />
@@ -115,7 +100,7 @@
       <file leaf-file-name="dtypes.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="7800">
               <caret line="529" selection-start-line="529" selection-end-line="529" />
             </state>
           </provider>
@@ -124,7 +109,7 @@
       <file leaf-file-name="ddpg.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/agents/ddpg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
+            <state relative-caret-position="735">
               <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
             </state>
           </provider>
@@ -133,7 +118,7 @@
       <file leaf-file-name="a2c.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="3435">
               <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
             </state>
           </provider>
@@ -225,7 +210,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="44" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="829" />
@@ -237,6 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,7 +281,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -525,33 +511,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50143063" side_tool="true" weight="0.28242424" />
-      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" order="6" sideWeight="0.60545456" side_tool="true" visible="true" weight="0.34120172" />
+      <window_info anchor="right" x="0" y="0" width="310" height="629" id="Documentation" order="6" sideWeight="0.61119753" side_tool="true" visible="true" weight="0.34120172" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.28142077" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928468" weight="0.3272727" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32848486" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.24863388" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983108" visible="true" weight="0.14949928" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.22060606" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983108" visible="true" weight="0.15593705" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.39454547" visible="true" weight="0.34120172" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.3888025" visible="true" weight="0.34120172" />
       <window_info id="Structure" order="1" sideWeight="0.5016892" side_tool="true" weight="0.14949928" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="12" visible="true" weight="0.32969698" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
-      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="12" visible="true" weight="0.32969698" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,6 +580,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3435">
+          <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -848,7 +840,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/util/java_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="465">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#154#195#0" expanded="true" />
@@ -858,31 +850,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/ddpg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="735">
           <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="3435">
           <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
+        <state relative-caret-position="7800">
           <caret line="529" selection-start-line="529" selection-end-line="529" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="165">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding>
             <element signature="e#153#171#0" expanded="true" />
@@ -892,7 +881,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="255">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
           <folding>
             <element signature="e#153#196#0" expanded="true" />
@@ -907,20 +896,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="107" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="155" column="14" lean-forward="true" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
+        <state relative-caret-position="2235">
+          <caret line="155" column="14" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
           <folding>
             <element signature="e#153#163#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
