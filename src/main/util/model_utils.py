@@ -10,7 +10,11 @@
 import numpy as np
 import pandas as pd
 
+<<<<<<< HEAD
 def evaluate(agent_model, num_episodes=1):
+=======
+def evaluate(agent_model, num_episodes=10):
+>>>>>>> 6033157baaa0c3c976aaf55286970513ba1fe0d5
     """
     Evaluate a RL agent
     :param model: (BaseRLModel object) the RL Agent
@@ -24,16 +28,25 @@ def evaluate(agent_model, num_episodes=1):
         episode_rewards = []
         done = False
         obs = env.reset()
+        max_action = []
+        max_reward = -1000000000
         while not done:
             # _states are only useful when using LSTM policies
 
             action, _states = agent_model.predict(obs)
-
             # here, action, rewards and dones are arrays
             # because we are using vectorized env
             obs, reward, done, info = env.step(action)
 
             episode_rewards.append(reward)
+
+            if(reward > max_reward):
+                max_action = action
+                max_reward = reward
+
+        print("BEST ACTION: {}".format(max_action))
+        print("BEST REWARD: {}".format(max_reward))
+
 
         all_episode_rewards.append(sum(episode_rewards))
 
