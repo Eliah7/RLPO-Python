@@ -10,11 +10,7 @@
 import numpy as np
 import pandas as pd
 
-<<<<<<< HEAD
-def evaluate(agent_model, num_episodes=1):
-=======
 def evaluate(agent_model, num_episodes=10):
->>>>>>> 6033157baaa0c3c976aaf55286970513ba1fe0d5
     """
     Evaluate a RL agent
     :param model: (BaseRLModel object) the RL Agent
@@ -40,7 +36,7 @@ def evaluate(agent_model, num_episodes=10):
 
             episode_rewards.append(reward)
 
-            if(reward > max_reward):
+            if reward > max_reward:
                 max_action = action
                 max_reward = reward
 
