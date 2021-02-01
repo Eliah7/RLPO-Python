@@ -14,22 +14,21 @@ from src.main.agents.ppo2_agent import train_ppo2
 from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
 from src.main.env.environment import Environment
 import numpy as np
+import click
 
 if __name__ == '__main__':
     np.seterr(all='raise')
-    print("Enter the name of the agent: (eg. a2c, dqn, ppo2)")
-    agent = input()
-    print("Agent: {}".format(agent))
+    agent = input(click.style("Enter the name of the agent: (eg. a2c, dqn, ppo2)>", "red", bold=True))
+    # print("Agent: {}".format(agent))
 
-    print("Enter the electrical grid to use: (eg. kimweri, bbq-village, bus33, abiudi, solar)")
-    grid_name = input()
-    print("Grid: {}".format(grid_name))
+    grid_name = input(click.style("Enter the electrical grid to use: (eg. kimweri, bbq-village, bus33, abiudi, solar)>", "red", bold=True))
+    # print("Grid: {}".format(grid_name))
 
-    print("Enter the number of training steps: (0 for default)")
-    train_steps = int(input())
+    # print("")
+    train_steps = int(input(click.style("Enter the number of training steps: (0 for default)>", "red", bold=True)))
 
-    print("Enter the type of state: (discrete or continous)")
-    state_type = input().lower()
+    # print("")
+    state_type =input(click.style("Enter the type of state: (discrete or continous)>", "red", bold=True)).lower()
     state_type = "discrete" if state_type == "" else state_type
 
     # print("Enter the load shedding percentage: ")

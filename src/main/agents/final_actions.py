@@ -12,22 +12,19 @@ from src.main.util.model_utils import evaluate
 from src.main.env.environment import Environment
 from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
 import time
+import click
+
 if __name__ == '__main__':
+    grid_name = input(click.style("Enter grid name>", "red", bold=True))
 
-    print("Enter grid name")
-    grid_name = input()
+    learning_rate = input(click.style("Enter learning rate>", "red", bold=True))
 
-    print("Enter learning rate")
-    learning_rate = input()
-
-    print("Enter gamma")
-    gamma = input()
+    gamma = input(click.style("Enter gamma>", "red", bold=True))
 
     env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type="continous")])
     env = VecCheckNan(env, raise_exception=True)
 
-    print("Enter model to test: {1 => dqn, 2 => ppo, 3 => a2c}")
-    model_no = int(input())
+    model_no = int(input(click.style("Enter model to test: {1 => dqn, 2 => ppo, 3 => a2c}>", "red", bold=True)))
 
     if model_no == 1:
         model: DQN = DQN.load("./saved_models/dqn_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
