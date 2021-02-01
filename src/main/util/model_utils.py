@@ -20,12 +20,13 @@ def evaluate(agent_model, num_episodes=10):
     # This function will only work for a single Environment
     env = agent_model.get_env()
     all_episode_rewards = []
+    max_action = []
+    max_reward = -1000000000
     for i in range(num_episodes):
         episode_rewards = []
         done = False
         obs = env.reset()
-        max_action = []
-        max_reward = -1000000000
+
         while not done:
             # _states are only useful when using LSTM policies
 
@@ -34,17 +35,18 @@ def evaluate(agent_model, num_episodes=10):
             # because we are using vectorized env
             obs, reward, done, info = env.step(action)
 
-            episode_rewards.append(reward)
+            episode_rewards.append(reward[0])
 
-            if reward > max_reward:
+            if reward[0] > max_reward:
                 max_action = action
                 max_reward = reward
 
-        print("BEST ACTION: {}".format(max_action))
-        print("BEST REWARD: {}".format(max_reward))
 
 
         all_episode_rewards.append(sum(episode_rewards))
+
+    print("BEST ACTION: {}".format(max_action))
+    print("BEST REWARD: {}".format(max_reward))
 
     mean_episode_reward = np.mean(all_episode_rewards)
     print("Mean reward:", mean_episode_reward, "Num episodes:", num_episodes)
