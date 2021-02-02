@@ -19,26 +19,19 @@ import click
 if __name__ == '__main__':
     np.seterr(all='raise')
     agent = input(click.style("Enter the name of the agent: (eg. a2c, dqn, ppo2)>", "red", bold=True))
-    # print("Agent: {}".format(agent))
 
     grid_name = input(click.style("Enter the electrical grid to use: (eg. kimweri, bbq-village, bus33, abiudi, solar)>", "red", bold=True))
-    # print("Grid: {}".format(grid_name))
 
-    # print("")
     train_steps = int(input(click.style("Enter the number of training steps: (0 for default)>", "red", bold=True)))
 
-    # print("")
     state_type =input(click.style("Enter the type of state: (discrete or continous)>", "red", bold=True)).lower()
     state_type = "discrete" if state_type == "" else state_type
-
-    # print("Enter the load shedding percentage: ")
-    # load_shedding = int(input())
 
     print("Training Steps: {}".format(train_steps))
     print("Training ... ")
 
     env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type=state_type)])
-    #env = Environment(grid_name=grid_name, action_type=state_type)
+
     env = VecCheckNan(env, raise_exception=True)
 
     if agent == "a2c":
@@ -56,11 +49,6 @@ if __name__ == '__main__':
             train_ppo2(env)
         else:
             train_ppo2(env, grid_name, train_steps=train_steps)
-    # elif agent == "ddpg":
-    #     if train_steps == 0:
-    #         train_ddpg(grid_name)
-    #     else:
-    #         train_ddpg(grid_name, train_steps=train_steps)
 
     print("Training Done. Run tensorboard --logdir <directory of tensorboard> to see training curves. \nPlots are in the plots directory")
 

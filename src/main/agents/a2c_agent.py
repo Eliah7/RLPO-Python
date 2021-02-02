@@ -29,10 +29,6 @@ def train_a2c(env, grid_name, train_steps=1000):
     model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=gamma, learning_rate=learning_rate)
     model.setup_model()
 
-    # # evaluate before training
-    # _, all_rewards = evaluate(model)
-    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - A2C")
-
     start = time.time()
     model.learn(total_timesteps=train_steps)
     end = time.time()
@@ -45,8 +41,6 @@ def train_a2c(env, grid_name, train_steps=1000):
     _, all_rewards = evaluate(model)
     end = time.time()
     print("Running time per time step: {}".format((end - start) / 100))
-    # plot_moving_avg(np.array(model.rewards_ph), title="Running Average reward during training")
-    # print(all_rewards)
 
     plot_moving_avg(np.array(all_rewards), title="Running Average reward after training")
 
