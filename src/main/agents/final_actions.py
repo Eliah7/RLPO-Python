@@ -20,7 +20,6 @@ def test_rl_agent(agent, environment):
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     env = Environment(grid_name="bus33")
     # model = A2C.load("./saved_models/a2c")
     model = DQN.load("./saved_models/dqn", env=env)
@@ -37,7 +36,7 @@ if __name__ == '__main__':
 
         print("OUPUT: {}".format(next_obs))
         print("REWARD: {}".format(reward))
-=======
+
     grid_name = input(click.style("Enter grid name>", "red", bold=True))
 
     learning_rate = input(click.style("Enter learning rate>", "red", bold=True))
@@ -67,4 +66,4 @@ if __name__ == '__main__':
     end = time.time()
     print("Running time per time step: {}".format((end - start) / 10))
     # print(all_rewards)
->>>>>>> 4787ddb4d15f9b50bf59b8d7400cf741567789b4
+
