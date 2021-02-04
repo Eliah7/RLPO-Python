@@ -47,7 +47,6 @@ class Environment(gym.Env):
         self.reward_range = spaces.Box(low=0, high=1000, shape=(1,))  # spaces.Box(np.array(0), np.array(100))
 
         high = np.array([10000] * self.n_nodes)
-        print(-high)
         self.observation_space = spaces.Box(-high, high)
 
         if action_type.lower() == "discrete":
@@ -78,7 +77,7 @@ class Environment(gym.Env):
         if not (power_values_from_dlf.min() > 0.9 and power_values_from_dlf.max() < 1.1):
             return -np.sum(status)
 
-        return np.sum(load * status * np.square(priority)) ** 0.5
+        return np.sum(load * status * np.square(priority))
 
     def step(self, action):
         # Execute one time step within the environment
@@ -176,24 +175,25 @@ class Environment(gym.Env):
 
     def reward(self, action):
         print("CURRENT STATE: " + str(self.load_data[:, 3]))
+        print("RESTORED LOAD: {}%".format(self.restored_load_percentage()))
         power_values_from_dlf, _ = dlf_analyse(self.line_data, self.load_data, grid_name=self.grid_name)
 
         power_values_from_dlf = np.array(power_values_from_dlf)
-        print(power_values_from_dlf)
+        # print(power_values_from_dlf)
         print("MIN VOL: {}".format(power_values_from_dlf.min()))
         print("MAX VOL: {}".format(power_values_from_dlf.max()))
 
         if self.action_type == "continous":
             if self.calculate_reward(np.array(action), self.load_data[:, 1],
-                                     self.load_data[:, 4], self.load_data) < self.current_reward:
+                                     self.load_data[:, 4], self.load_data) <= self.current_reward:
                 return self.calculate_reward(np.array(action), self.load_data[:, 1],
                                              self.load_data[:, 4], self.load_data) - self.current_reward
 
         status_reward = self.calculate_reward(self.load_data[:, 3], self.load_data[:, 1], self.load_data[:,
-                                                                                          4], self.load_data)  # np.sum(self.load_data[:, 3] * np.square(self.load_data[:, 4]))
+                                                                                          4], self.load_data) # np.sum(self.load_data[:, 3] * np.square(self.load_data[:, 4]))
 
-        print("STATUS REWARD: {}".format(status_reward))
-        print("RESTORED LOAD: {}%".format(self.restored_load_percentage()))
+        # print("STATUS REWARD: {}".format(status_reward))
+
         self.current_reward = status_reward  # divide by num_actions which is the number of episodes
         return status_reward
 

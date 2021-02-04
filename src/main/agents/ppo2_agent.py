@@ -25,7 +25,7 @@ def train_ppo2(env, grid_name, train_steps=20000):
     log_dir = "./tensorboard/"
 
     gamma = 0
-    learning_rate = 0.05
+    learning_rate = 0.03
     model = PPO2(MlpPolicy, env=env, _init_setup_model=True, verbose=1, tensorboard_log=log_dir, learning_rate=learning_rate, gamma=gamma)
 
     start = time.time()
