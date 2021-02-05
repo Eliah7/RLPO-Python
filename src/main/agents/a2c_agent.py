@@ -24,7 +24,7 @@ def train_a2c(env, grid_name, train_steps=1000):
     log_dir = "./tensorboard/"
 
     gamma = 0
-    learning_rate = 0.005
+    learning_rate = 0.0005
     # # env = Monitor(env, "./logs")
     model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=gamma, learning_rate=learning_rate)
     model.setup_model()

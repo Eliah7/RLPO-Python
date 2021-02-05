@@ -35,14 +35,15 @@ if __name__ == '__main__':
     if model_no == 4:
         try:
             model = {
-                'PPO2': PPO2.load("./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),
-                                  env=env),
-                'A2C': A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),
-                                env=env)
+                'PPO2': PPO2.load("./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),env=env),
+                'A2C': A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),env=env)
             }
+            start = time.time()
             run_ensemble(model)
-        except:
-            print("ERROR: Failed to load models, make sure the models exists")
+            end = time.time()
+            print("Running time per time step: {}".format((end - start) / 10))
+        except Exception as e:
+            print("ERROR: Failed to load models, make sure the models exists {}".format(e))
     else:
         if model_no == 1:
             model: DQN = DQN.load("./saved_models/dqn_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),

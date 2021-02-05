@@ -53,12 +53,17 @@ def evaluate(agent_model, num_episodes=10):
 
     return mean_episode_reward, all_episode_rewards
 
-def run_ensemble(model: {}, num_episodes=10):
+def run_ensemble(model, num_episodes=10):
     max_model_action = []
     max_model_reward = -100000000
     best_model = ""
 
-    for model_name, agent_model in model.items:
+    for model_name, agent_model in model.items():
+        print("\n\n---------------------------------")
+        print("---------------------------------")
+        print("\t\t TRAINING {}".format(model_name))
+        print("---------------------------------")
+        print("---------------------------------")
         env = agent_model.get_env()
         all_episode_rewards = []
         max_action = []
@@ -69,8 +74,6 @@ def run_ensemble(model: {}, num_episodes=10):
             obs = env.reset()
 
             while not done:
-                # _states are only useful when using LSTM policies
-
                 action, _states = agent_model.predict(obs)
                 # here, action, rewards and dones are arrays
                 # because we are using vectorized env
@@ -93,8 +96,8 @@ def run_ensemble(model: {}, num_episodes=10):
         print("Mean reward:", mean_episode_reward, "Num episodes:", num_episodes)
 
     print("BEST MODEL: {}".format(best_model))
-    print("BEST ACTION: {}".format(max_action))
-    print("BEST REWARD: {}".format(max_reward))
+    print("BEST ACTION: {}".format(max_model_action))
+    print("BEST REWARD: {}".format(max_model_reward))
 
 
 def get_mva_kva(grid_name):
