@@ -53,6 +53,50 @@ def evaluate(agent_model, num_episodes=10):
 
     return mean_episode_reward, all_episode_rewards
 
+def run_ensemble(model: {}, num_episodes=10):
+    max_model_action = []
+    max_model_reward = -100000000
+    best_model = ""
+
+    for model_name, agent_model in model.items:
+        env = agent_model.get_env()
+        all_episode_rewards = []
+        max_action = []
+        max_reward = -1000000000
+        for i in range(num_episodes):
+            episode_rewards = []
+            done = False
+            obs = env.reset()
+
+            while not done:
+                # _states are only useful when using LSTM policies
+
+                action, _states = agent_model.predict(obs)
+                # here, action, rewards and dones are arrays
+                # because we are using vectorized env
+                obs, reward, done, info = env.step(action)
+
+                episode_rewards.append(reward[0])
+
+                if reward[0] > max_reward:
+                    max_action = action
+                    max_reward = reward
+
+            all_episode_rewards.append(sum(episode_rewards))
+
+        if max_reward > max_model_reward:
+            max_model_action = max_action
+            max_model_reward = max_reward
+            best_model = model_name
+
+        mean_episode_reward = np.mean(all_episode_rewards)
+        print("Mean reward:", mean_episode_reward, "Num episodes:", num_episodes)
+
+    print("BEST MODEL: {}".format(best_model))
+    print("BEST ACTION: {}".format(max_action))
+    print("BEST REWARD: {}".format(max_reward))
+
+
 def get_mva_kva(grid_name):
     model_desc = pd.read_csv("../env/data/models.csv")
 

@@ -8,7 +8,7 @@
 
 """
 from stable_baselines import DQN, A2C, PPO2
-from src.main.util.model_utils import evaluate
+from src.main.util.model_utils import evaluate, run_ensemble
 from src.main.env.environment import Environment
 from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
 import time
@@ -29,19 +29,34 @@ if __name__ == '__main__':
     env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type="continous")])
     env = VecCheckNan(env, raise_exception=True)
 
-    model_no = int(input(click.style("Enter model to test: {1 => dqn, 2 => ppo, 3 => a2c}>", "red", bold=True)))
+    model_no = int(
+        input(click.style("Enter model to test: {1 => dqn, 2 => ppo, 3 => a2c, 4 => ensemble}>", "red", bold=True)))
 
-    if model_no == 1:
-        model: DQN = DQN.load("./saved_models/dqn_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
-    elif model_no == 2:
-        model: PPO2 = PPO2.load("./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
-    elif model_no == 3:
-        model: A2C = A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
+    if model_no == 4:
+        try:
+            model = {
+                'PPO2': PPO2.load("./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),
+                                  env=env),
+                'A2C': A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),
+                                env=env)
+            }
+            run_ensemble(model)
+        except:
+            print("ERROR: Failed to load models, make sure the models exists")
     else:
-        raise Exception('Choose valid model')
+        if model_no == 1:
+            model: DQN = DQN.load("./saved_models/dqn_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),
+                                  env=env)
+        elif model_no == 2:
+            model: PPO2 = PPO2.load(
+                "./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma), env=env)
+        elif model_no == 3:
+            model: A2C = A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),
+                                  env=env)
+        else:
+            raise Exception('Choose valid model')
 
-    start = time.time()
-    evaluate(model)
-    end = time.time()
-    print("Running time per time step: {}".format((end - start) / 10))
-
+        start = time.time()
+        evaluate(model)
+        end = time.time()
+        print("Running time per time step: {}".format((end - start) / 10))
