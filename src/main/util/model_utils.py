@@ -83,9 +83,10 @@ def run_ensemble(model, num_episodes=10):
                 obs, reward, done, info = env.step(action)
                 episode_rewards.append(reward[0])
 
-                if reward[0] > max_reward:
+                cum_reward = reward * 0.3 + (info[0]['load'] * 0.7)
+                if cum_reward > max_reward:
                     max_action = action
-                    max_reward = reward
+                    max_reward = cum_reward
                     best_info = info[0]
 
             all_episode_rewards.append(sum(episode_rewards))

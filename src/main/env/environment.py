@@ -96,8 +96,9 @@ class Environment(gym.Env):
         power_values_from_dlf, _ = dlf_analyse(self.line_data, load_data_copy, grid_name=self.grid_name)
 
         power_values_from_dlf = np.array(power_values_from_dlf)
+        restored_load = np.sum(load_data_copy[:, 1][(load_data_copy[:, 3] == 1)] / np.sum(load_data_copy[:, 1])) * 100
         self.done = True
-        return obs, reward, self.done, {"min" : power_values_from_dlf.min(),"max" : power_values_from_dlf.max()}
+        return obs, reward, self.done, {"min" : power_values_from_dlf.min(),"max" : power_values_from_dlf.max(), "load": restored_load}
 
     def reset(self):
         print("**** EPISODE STARTS ...\n")
