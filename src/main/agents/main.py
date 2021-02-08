@@ -16,17 +16,7 @@ from src.main.env.environment import Environment
 import numpy as np
 import click
 
-if __name__ == '__main__':
-    np.seterr(all='raise')
-    agent = input(click.style("Enter the name of the agent: (eg. a2c, dqn, ppo2)>", "red", bold=True))
-
-    grid_name = input(click.style("Enter the electrical grid to use: (eg. kimweri, bbq-village, bus33, abiudi, solar)>", "red", bold=True))
-
-    train_steps = int(input(click.style("Enter the number of training steps: (0 for default)>", "red", bold=True)))
-
-    state_type =input(click.style("Enter the type of state: (discrete or continous)>", "red", bold=True)).lower()
-    state_type = "discrete" if state_type == "" else state_type
-
+def train_all_agents(agent, grid_name, train_steps, state_type):
     print("Training Steps: {}".format(train_steps))
     print("Training ... ")
 
@@ -50,5 +40,22 @@ if __name__ == '__main__':
         else:
             train_ppo2(env, grid_name, train_steps=train_steps)
 
-    print("Training Done. Run tensorboard --logdir <directory of tensorboard> to see training curves. \nPlots are in the plots directory")
+    print(
+        "Training Done. Run tensorboard --logdir <directory of tensorboard> to see training curves. \nPlots are in the plots directory")
 
+
+if __name__ == '__main__':
+    np.seterr(all='raise')
+    agent = input(click.style("Enter the name of the agent: (eg. a2c, dqn, ppo2)>", "red", bold=True))
+
+    grid_name = input(click.style("Enter the electrical grid to use: (eg. kimweri, bbq-village, bus33, abiudi, solar)>", "red", bold=True))
+
+    train_steps = int(input(click.style("Enter the number of training steps: (0 for default)>", "red", bold=True)))
+
+    state_type =input(click.style("Enter the type of state: (discrete or continous)>", "red", bold=True)).lower()
+    state_type = "discrete" if state_type == "" else state_type
+
+    print("Training Steps: {}".format(train_steps))
+    print("Training ... ")
+
+    train_all_agents(agent, grid_name,train_steps, state_type)
