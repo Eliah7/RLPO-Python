@@ -64,7 +64,9 @@ def run_ensemble(model, num_episodes=10):
         print("\t\t TRAINING {}".format(model_name))
         print("---------------------------------")
         print("---------------------------------")
+
         env = agent_model.get_env()
+
         all_episode_rewards = []
         max_action = []
         max_reward = -1000000000

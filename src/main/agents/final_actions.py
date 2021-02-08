@@ -29,6 +29,9 @@ if __name__ == '__main__':
     env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type="continous")])
     env = VecCheckNan(env, raise_exception=True)
 
+    env1 = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type="continous")])
+    env1 = VecCheckNan(env1, raise_exception=True)
+
     model_no = int(
         input(click.style("Enter model to test: {1 => dqn, 2 => ppo, 3 => a2c, 4 => ensemble}>", "red", bold=True)))
 
@@ -36,12 +39,12 @@ if __name__ == '__main__':
         try:
             model = {
                 'PPO2': PPO2.load("./saved_models/ppo2_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),env=env),
-                'A2C': A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),env=env)
+                'A2C': A2C.load("./saved_models/a2c_{}_learning_rate{}_gamma{}".format(grid_name, learning_rate, gamma),env=env1)
             }
             start = time.time()
             run_ensemble(model)
             end = time.time()
-            print("Running time per time step: {}".format((end - start) / 10))
+            print("Running time per time step: {}".format((end - start) / 20))
         except Exception as e:
             print("ERROR: Failed to load models, make sure the models exists {}".format(e))
     else:
