@@ -91,8 +91,13 @@ class Environment(gym.Env):
         reward = self.reward(action)
         print("REWARD {}".format(reward))
 
+        load_data_copy = self.load_data.copy()
+        load_data_copy[:, 3] = action
+        power_values_from_dlf, _ = dlf_analyse(self.line_data, load_data_copy, grid_name=self.grid_name)
+
+        power_values_from_dlf = np.array(power_values_from_dlf)
         self.done = True
-        return obs, reward, self.done, {}
+        return obs, reward, self.done, {"min" : power_values_from_dlf.min(),"max" : power_values_from_dlf.max()}
 
     def reset(self):
         print("**** EPISODE STARTS ...\n")

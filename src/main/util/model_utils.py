@@ -57,6 +57,7 @@ def run_ensemble(model, num_episodes=10):
     max_model_action = []
     max_model_reward = -100000000
     best_model = ""
+    best_model_info = {}
 
     for model_name, agent_model in model.items():
         print("\n\n---------------------------------")
@@ -70,6 +71,8 @@ def run_ensemble(model, num_episodes=10):
         all_episode_rewards = []
         max_action = []
         max_reward = -1000000000
+        best_info = {}
+
         for i in range(num_episodes):
             episode_rewards = []
             done = False
@@ -77,15 +80,13 @@ def run_ensemble(model, num_episodes=10):
 
             while not done:
                 action, _states = agent_model.predict(obs)
-                # here, action, rewards and dones are arrays
-                # because we are using vectorized env
                 obs, reward, done, info = env.step(action)
-
                 episode_rewards.append(reward[0])
 
                 if reward[0] > max_reward:
                     max_action = action
                     max_reward = reward
+                    best_info = info[0]
 
             all_episode_rewards.append(sum(episode_rewards))
 
@@ -93,6 +94,7 @@ def run_ensemble(model, num_episodes=10):
             max_model_action = max_action
             max_model_reward = max_reward
             best_model = model_name
+            best_model_info = best_info
 
         mean_episode_reward = np.mean(all_episode_rewards)
         print("Mean reward:", mean_episode_reward, "Num episodes:", num_episodes)
@@ -100,6 +102,8 @@ def run_ensemble(model, num_episodes=10):
     print("BEST MODEL: {}".format(best_model))
     print("BEST ACTION: {}".format(max_model_action))
     print("BEST REWARD: {}".format(max_model_reward))
+    print("MIN VOL: {}".format(best_model_info["min"]))
+    print("MAX VOL: {}".format(best_model_info["max"]))
 
 
 def get_mva_kva(grid_name):
