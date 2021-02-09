@@ -35,9 +35,9 @@ def evaluate(agent_model, num_episodes=10):
             # because we are using vectorized env
             obs, reward, done, info = env.step(action)
 
-            episode_rewards.append(reward[0])
+            episode_rewards.append(reward)
 
-            if reward[0] > max_reward:
+            if reward > max_reward:
                 max_action = action
                 max_reward = reward
 

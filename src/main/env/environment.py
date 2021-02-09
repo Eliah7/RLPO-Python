@@ -98,6 +98,7 @@ class Environment(gym.Env):
         power_values_from_dlf = np.array(power_values_from_dlf)
         restored_load = np.sum(load_data_copy[:, 1][(load_data_copy[:, 3] == 1)] / np.sum(load_data_copy[:, 1])) * 100
         self.done = True
+        reward=reward if self.action_type == 'discrete' else reward[0]
         return obs, reward, self.done, {"min" : power_values_from_dlf.min(),"max" : power_values_from_dlf.max(), "load": restored_load}
 
     def reset(self):

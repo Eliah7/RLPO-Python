@@ -25,11 +25,11 @@ if __name__ == '__main__':
     learning_rate = input(click.style("Enter learning rate>", "red", bold=True))
 
     gamma = input(click.style("Enter gamma>", "red", bold=True))
-
-    env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type="continous")])
+    action_type = input(click.style("action type>", "red", bold=True))
+    env = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type=action_type)])
     env = VecCheckNan(env, raise_exception=True)
 
-    env1 = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type="continous")])
+    env1 = DummyVecEnv([lambda: Environment(grid_name=grid_name, action_type=action_type)])
     env1 = VecCheckNan(env1, raise_exception=True)
 
     model_no = int(
