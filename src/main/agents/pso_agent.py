@@ -9,10 +9,10 @@
 """
 
 from py4j.java_gateway import JavaGateway, GatewayParameters
-from src.main.util.config import *
-from src.main.env.environment import *
-from src.main.util.model_utils import *
-from src.main.util.graph_utils import *
+from main.util.config import *
+from main.env.environment import *
+from main.util.model_utils import *
+from main.util.graph_utils import *
 
 class PSOAgent:
     """

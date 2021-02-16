@@ -10,7 +10,7 @@
 import numpy as np
 import pandas as pd
 
-def evaluate(agent_model, num_episodes=10):
+def evaluate(agent_model, num_episodes=50):
     """
     Evaluate a RL agent
     :param model: (BaseRLModel object) the RL Agent
@@ -58,6 +58,7 @@ def run_ensemble(model, num_episodes=10):
     max_model_reward = -100000000
     best_model = ""
     best_model_info = {}
+    max_model_restored = 0
 
     for model_name, agent_model in model.items():
         print("\n\n---------------------------------")
@@ -71,6 +72,7 @@ def run_ensemble(model, num_episodes=10):
         all_episode_rewards = []
         max_action = []
         max_reward = -1000000000
+        max_restored = 0
         best_info = {}
 
         for i in range(num_episodes):
@@ -88,6 +90,7 @@ def run_ensemble(model, num_episodes=10):
                     max_action = action
                     max_reward = cum_reward
                     best_info = info[0]
+                    max_restored = info[0]['load']
 
             all_episode_rewards.append(sum(episode_rewards))
 
@@ -96,6 +99,7 @@ def run_ensemble(model, num_episodes=10):
             max_model_reward = max_reward
             best_model = model_name
             best_model_info = best_info
+            max_model_restored = max_restored
 
         mean_episode_reward = np.mean(all_episode_rewards)
         print("Mean reward:", mean_episode_reward, "Num episodes:", num_episodes)
@@ -103,12 +107,13 @@ def run_ensemble(model, num_episodes=10):
     print("BEST MODEL: {}".format(best_model))
     print("BEST ACTION: {}".format(max_model_action))
     print("BEST REWARD: {}".format(max_model_reward))
+    print("RESTORED LOAD: {}".format(max_model_restored))
     print("MIN VOL: {}".format(best_model_info["min"]))
     print("MAX VOL: {}".format(best_model_info["max"]))
 
 
 def get_mva_kva(grid_name):
-    model_desc = pd.read_csv("../env/data/models.csv")
+    model_desc = pd.read_csv("main/env/data/models.csv")
 
     return float(model_desc.loc[model_desc['File'] == grid_name]['Mva']), float(model_desc.loc[model_desc['File'] == grid_name]['Kva'])
 

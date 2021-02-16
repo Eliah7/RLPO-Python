@@ -14,19 +14,23 @@ import datetime as dt
 from stable_baselines.common.policies import MlpPolicy
 from stable_baselines.common.vec_env import DummyVecEnv
 from stable_baselines import PPO2
-from src.main.util.graph_utils import *
-from src.main.util.model_utils import *
-from src.main.env.environment import Environment
+from main.util.graph_utils import *
+from main.util.model_utils import *
+from main.env.environment import Environment
 import tensorflow as tf
 
 import time
 
 def train_ppo2(env, grid_name, train_steps=20000):
     log_dir = "./tensorboard/"
-
+    # env = Monitor(env, "./logs")
     gamma = 0
     learning_rate = 0.0005
     model = PPO2(MlpPolicy, env=env, _init_setup_model=True, verbose=1, tensorboard_log=log_dir, learning_rate=learning_rate, gamma=gamma)
+
+    # evaluate before training
+    # _, all_rewards = evaluate(model)
+    # plot_moving_avg(np.array(all_rewards), title="Running Average reward before training - PPO2")-
 
     start = time.time()
     model.learn(total_timesteps=train_steps)

@@ -9,7 +9,7 @@
 """
 
 from unittest import TestCase
-from src.main.util.binary_ops import *
+from main.util.binary_ops import *
 
 class TestBinaryOps(TestCase):
     def test_binary_str_to_int(self):

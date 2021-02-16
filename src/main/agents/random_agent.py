@@ -9,8 +9,8 @@
 """
 
 import gym
-from src.main.env.environment import Environment
-from src.main.util.model_utils import *
+from main.env.environment import Environment
+from main.util.model_utils import *
 
 if __name__ == '__main__':
     env = Environment(15)

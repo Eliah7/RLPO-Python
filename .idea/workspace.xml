@@ -1,154 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="Allow other grids to run">
+    <list default="true" id="0a97640d-23db-4e21-af72-719a820a708a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agents/mainxx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/models/my_model_10_feb/saved_model.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/models/my_model_10_feb/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/models/my_model_10_feb/variables/variables.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/models/my_model_10_feb_1/saved_model.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/models/my_model_10_feb_1/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/models/my_model_10_feb_1/variables/variables.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/models/my_model_h (1).h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/my_model_h.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/env/variable_load/variable_load.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saved_models/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tensorboard/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RLPO-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RLPO-Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" afterDir="false" />
-=======
-    <list default="true" id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="working rl">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/a2c_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/ddpg.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/ddpg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/dqn_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/final_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/final_actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agents/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/logs/monitor.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/DQN and A2C training curves.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/DQN_Training_Curve.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average Reward - PSO .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - A2C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - DQN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training - PPO2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward after training.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - A2C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - DQN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/Running Average reward before training - PPO2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/tensorboard/DQN_1/events.out.tfevents.1609231139.Elias-MacBook-Pro-1022.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/tensorboard/DQN_2/events.out.tfevents.1609231491.Elias-MacBook-Pro-1022.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/tensorboard/DQN_3/events.out.tfevents.1609231549.Elias-MacBook-Pro-1022.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/plots/tensorboard/DQN_4/events.out.tfevents.1609231585.Elias-MacBook-Pro-1022.local" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/pso_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/pso_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/random_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agents/random_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/a2c.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/a2c_learning_rate0.005_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/a2c_learning_rate0.01_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/dqn_learning_rate0.005_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2_abiudi_learning_rate0.0005_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2_bus33_learning_rate0.0005_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2_learning_rate0.0005_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2_learning_rate0.005_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2_learning_rate0.01_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2_learning_rate0.2_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agents/saved_models/ppo2_learning_rate0.9_gamma0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/env/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/env/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/env/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/util/java_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/java_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/util/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/model_utils.py" afterDir="false" />
->>>>>>> 6033157baaa0c3c976aaf55286970513ba1fe0d5
->>>>>>> 4787ddb4d15f9b50bf59b8d7400cf741567789b4
+      <change beforePath="$PROJECT_DIR$/src/tests/binary_ops_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/binary_ops_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/environment_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/environment_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/pso_agent_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/pso_agent_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/RLPO_Python$a2c_agent.coverage" NAME="a2c_agent Coverage Results" MODIFIED="1609234805844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_binary_str_to_int.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_binary_str_to_int Coverage Results" MODIFIED="1603372007685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$pso_agent.coverage" NAME="pso_agent Coverage Results" MODIFIED="1609248419339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_bin_str_with_max_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_bin_str_with_max_count Coverage Results" MODIFIED="1603374249781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_digit_count_to_binary_str.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_digit_count_to_binary_str Coverage Results" MODIFIED="1603817975937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$dqn_agent.coverage" NAME="dqn_agent Coverage Results" MODIFIED="1609241463250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$random_agent.coverage" NAME="random_agent Coverage Results" MODIFIED="1604921067789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$ppo2_agent.coverage" NAME="ppo2_agent Coverage Results" MODIFIED="1609235338371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1611160303297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$java_utils.coverage" NAME="java_utils Coverage Results" MODIFIED="1604661187686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/util" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_environment_tests_TestEnvironment_testCreateEnvironment.coverage" NAME="Unittests for environment_tests.TestEnvironment.testCreateEnvironment Coverage Results" MODIFIED="1604995882735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$pso_agent_test.coverage" NAME="pso_agent_test Coverage Results" MODIFIED="1604484158756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent.coverage" NAME="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent Coverage Results" MODIFIED="1604485206330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$final_actions.coverage" NAME="final_actions Coverage Results" MODIFIED="1611160426558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/agents" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps_test_get_max_number_for_binary_digit_count.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps.test_get_max_number_for_binary_digit_count Coverage Results" MODIFIED="1603809685552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-    <SUITE FILE_PATH="coverage/RLPO_Python$Unittests_for_binary_ops_test_TestBinaryOps.coverage" NAME="Unittests for binary_ops_test.TestBinaryOps Coverage Results" MODIFIED="1603817979498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
-  </component>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="environment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2235">
-              <caret line="155" column="14" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
-              <folding>
-                <element signature="e#153#163#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bus33-bd.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-bd.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a2c_agent.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="java_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/util/java_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#154#195#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="final_actions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#153#196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-              <folding>
-                <element signature="e#153#171#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dtypes.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7800">
-              <caret line="529" selection-start-line="529" selection-end-line="529" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ddpg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/agents/ddpg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a2c.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3435">
-              <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-=======
->>>>>>> 6033157baaa0c3c976aaf55286970513ba1fe0d5
->>>>>>> 4787ddb4d15f9b50bf59b8d7400cf741567789b4
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -156,194 +77,34 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>power_assigned</find>
-      <find>jre</find>
-      <find>env</find>
-      <find>action</find>
-      <find>step</find>
-      <find>CURRENT</find>
-      <find>max_capacity</find>
-      <find>get_remaining_power</find>
-      <find>self.load_data[:, 4])</find>
-      <find>self.load_data[:, 5</find>
-      <find>4</find>
-      <find>self.done</find>
-      <find>2</find>
-      <find>load_shedding</find>
-      <find>self.load_shedding</find>
-      <find>self.load_data[:, 1</find>
-      <find>self.load_data[:, 1]</find>
-      <find>self.num_actions</find>
-      <find>print</find>
-      <find>get_data_from_csv</find>
-      <find>EPISODE</find>
-      <find>EPISODE ST</find>
-      <find>EPISODE ENDS</find>
-      <find>EPISODE STARTS</find>
-      <find>54</find>
-      <find>56</find>
-      <find>66</find>
-      <find>VOL</find>
-      <find>73</find>
-      <find>calculate_reward</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="7ba5e95079fb4c5a575685ef9723a2d122fd416f" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/util/graph_utils.py" />
-        <option value="$PROJECT_DIR$/src/tests/binary_ops_test.py" />
-        <option value="$PROJECT_DIR$/src/main/util/config.py" />
-        <option value="$PROJECT_DIR$/src/tests/pso_agent_tests.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/random_agent.py" />
-        <option value="$PROJECT_DIR$/src/tests/environment_tests.py" />
-        <option value="$PROJECT_DIR$/src/main/util/binary_ops.py" />
-        <option value="$PROJECT_DIR$/src/main/env/data/bbq-village-ld.csv" />
-        <option value="$PROJECT_DIR$/src/main/env/data/abiudi-ld.csv" />
-        <option value="$PROJECT_DIR$/src/main/env/data/kimweri-ld.csv" />
-        <option value="$PROJECT_DIR$/src/main/agents/pso_agent.py" />
-        <option value="$PROJECT_DIR$/src/main/util/java_utils.py" />
-        <option value="$PROJECT_DIR$/src/main/main.py" />
-        <option value="$PROJECT_DIR$/src/main/env/data/abiudi-bd.csv" />
-        <option value="$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv" />
-        <option value="$PROJECT_DIR$/src/main/env/data/models.csv" />
-        <option value="$PROJECT_DIR$/src/main/env/data/bus33-ld.csv" />
-        <option value="$PROJECT_DIR$/src/main/env/data.py" />
-        <option value="$PROJECT_DIR$/src/main/env/data/bus33-bd.csv" />
-        <option value="$PROJECT_DIR$/src/main/agents/ddpg.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/ppo2_agent.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/dqn_agent.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/main.py" />
-        <option value="$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv" />
-        <option value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
-        <option value="$PROJECT_DIR$/src/main/agents/final_actions.py" />
-        <option value="$PROJECT_DIR$/src/main/util/model_utils.py" />
-        <option value="$PROJECT_DIR$/src/main/env/environment.py" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="44" />
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="829" />
-  </component>
-  <component name="ProjectId" id="1mNkGqn3JhTZc59WoOFkK0oz4D3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="agents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="env" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="env" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RLPO-Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RLPO-Python" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1nxuTFCWKS2BnZWsYdScGxBMFn7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RLGC-master/RLGC-master" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/env/variable_load" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/env/data" />
+      <recent name="E:\Workspace\Python\RLPO-Python\src\main\env\variable_load" />
+      <recent name="E:\Workspace\Python\RLPO-Python\src\main\env\variable_load\models" />
+      <recent name="E:\Workspace\Python\RLPO-Python\src\tensorboard" />
+      <recent name="E:\Workspace\Python\RLPO-Python\src\saved_models" />
+      <recent name="E:\Workspace\Python\RLPO-Python\src\plots" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/agents/old_tensoboard" />
-      <recent name="$PROJECT_DIR$/src/main/agents/final results/a2c" />
-      <recent name="$PROJECT_DIR$/src/main/agents/final results/pp02" />
-      <recent name="$PROJECT_DIR$/src/main/agents/final results/dqn" />
-      <recent name="$PROJECT_DIR$/src/main/agents" />
+      <recent name="E:\Workspace\Python\RLPO-Python\src" />
     </key>
   </component>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  <component name="RunManager" selected="Python.final_actions">
-    <configuration name="dqn_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
-=======
->>>>>>> 4787ddb4d15f9b50bf59b8d7400cf741567789b4
-  <component name="RunManager" selected="Python.main">
-    <configuration name="a2c_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
->>>>>>> 6033157baaa0c3c976aaf55286970513ba1fe0d5
+  <component name="RunManager" selected="Python.variable_load">
+    <configuration name="final_actions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -351,54 +112,10 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/agents" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/a2c_agent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dqn_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RLPO-Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/agents" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/dqn_agent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="final_actions" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RLPO-Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/agents" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/final_actions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -416,12 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/agents" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/main.py" />
+      <option name="SCRIPT_NAME" value="E:\Workspace\Python\RLPO-Python\src\app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -430,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pso_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mainxx" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -438,12 +154,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/agents" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/" />
       <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/agents/pso_agent.py" />
+      <option name="SCRIPT_NAME" value="E:\Workspace\Python\RLPO-Python\src\main\agents\mainxx.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -452,160 +167,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pso_agent_test" type="tests" factoryName="Unittests">
+    <configuration name="variable_load" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLPO-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/env/variable_load" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/tests&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/env/variable_load/variable_load.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.dqn_agent" />
-      <item itemvalue="Python.pso_agent" />
+      <item itemvalue="Python.mainxx" />
       <item itemvalue="Python.main" />
-<<<<<<< HEAD
-      <item itemvalue="Python tests.pso_agent_test" />
-=======
       <item itemvalue="Python.final_actions" />
-      <item itemvalue="Python tests.pso_agent_test" />
-      <item itemvalue="Python.a2c_agent" />
->>>>>>> 4787ddb4d15f9b50bf59b8d7400cf741567789b4
+      <item itemvalue="Python.variable_load" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.variable_load" />
         <item itemvalue="Python.final_actions" />
-<<<<<<< HEAD
+        <item itemvalue="Python.mainxx" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.pso_agent" />
-=======
->>>>>>> 6033157baaa0c3c976aaf55286970513ba1fe0d5
-        <item itemvalue="Python.dqn_agent" />
-        <item itemvalue="Python.a2c_agent" />
-        <item itemvalue="Python.pso_agent" />
       </list>
     </recent_temporary>
   </component>
-<<<<<<< HEAD
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
-=======
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
->>>>>>> 4787ddb4d15f9b50bf59b8d7400cf741567789b4
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f86b5a74-3974-4182-a55e-33abcfb38ea0" name="Default" comment="" />
-      <created>1603357209226</created>
+      <changelist id="0a97640d-23db-4e21-af72-719a820a708a" name="Default Changelist" comment="" />
+      <created>1612344074810</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603357209226</updated>
+      <updated>1612344074810</updated>
     </task>
-    <task id="LOCAL-00001" summary="Update dlf">
-      <created>1609345303402</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1609345303402</updated>
-    </task>
-    <task id="LOCAL-00002" summary="working rl">
-      <created>1611248528174</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1611248528174</updated>
-    </task>
-    <task id="LOCAL-00003" summary="working rl">
-      <created>1611248574980</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1611248574980</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 31s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 50s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 54s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 17m 57s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 09s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 20s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 35s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 18m 46s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_pso_agent_tests_PSOAgentTests_test_create_agent - 2020.11.04 at 13h 20m 07s.xml">
-      <configuration name="Unittests for pso_agent_tests.PSOAgentTests.test_create_agent" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_environment_tests_TestEnvironment_testCreateEnvironment - 2020.11.10 at 11h 11m 24s.xml">
-      <configuration name="Unittests for environment_tests.TestEnvironment.testCreateEnvironment" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50143063" side_tool="true" weight="0.28242424" />
-      <window_info anchor="right" x="0" y="0" width="310" height="629" id="Documentation" order="6" sideWeight="0.61119753" side_tool="true" visible="true" weight="0.34120172" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.28142077" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928468" weight="0.3272727" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32848486" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.22060606" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983108" visible="true" weight="0.15593705" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.3888025" visible="true" weight="0.34120172" />
-      <window_info id="Structure" order="1" sideWeight="0.5016892" side_tool="true" weight="0.14949928" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="12" visible="true" weight="0.32969698" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-    </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -618,362 +235,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-<<<<<<< HEAD
-=======
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
->>>>>>> 4787ddb4d15f9b50bf59b8d7400cf741567789b4
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update dlf" />
-    <MESSAGE value="working rl" />
-    <option name="LAST_COMMIT_MESSAGE" value="working rl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/main/env/data.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3435">
-          <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#153#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/pso_agent_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/deepq/build_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="321" column="4" selection-start-line="321" selection-start-column="4" selection-end-line="321" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/common/base_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="801" column="8" selection-start-line="801" selection-start-column="8" selection-end-line="801" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/random_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/bbq-village-ld.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/util/graph_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/numba/core/pythonapi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="196" column="69" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/llvmlite/llvmpy/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/abiudi-ld.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/models.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-ld.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-ld.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/util/binary_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/kimweri-bd.csv" />
-    <entry file="file:///usr/local/lib/python3.7/site-packages/gym/spaces/box.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/common/policies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="644" column="6" selection-start-line="644" selection-start-column="6" selection-end-line="644" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/deepq/dqn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/common/distributions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="486" selection-start-line="486" selection-end-line="486" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/gym/spaces/multi_discrete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1199943126/numpy/random/mtrand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33285">
-          <caret line="2223" column="4" selection-start-line="2223" selection-start-column="4" selection-end-line="2223" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/gym/spaces/discrete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/abiudi-bd_1.csv" />
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="1197" selection-start-line="1197" selection-end-line="1197" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="e#154#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/ops/gen_array_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="918" selection-start-line="918" selection-end-line="918" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="787" column="39" selection-start-line="787" selection-start-column="39" selection-end-line="787" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/pso_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/ppo2_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/ppo2/ppo2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/dqn_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="28" column="8" selection-start-line="27" selection-start-column="6" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/gym/spaces/multi_binary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="1800" selection-start-line="1800" selection-end-line="1800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/ops/clip_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="294" selection-start-line="294" selection-end-line="294" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/ops/numerics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/common/vec_env/vec_check_nan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/common/runners.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5895">
-          <caret line="403" selection-start-line="403" selection-end-line="403" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/bbq-village-bd.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/java_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#154#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/ddpg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/stable_baselines/a2c/a2c.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3435">
-          <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7800">
-          <caret line="529" selection-start-line="529" selection-end-line="529" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/util/model_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="e#153#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/final_actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#153#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/data/bus33-bd.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/env/environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2235">
-          <caret line="155" column="14" selection-start-line="155" selection-start-column="14" selection-end-line="157" selection-end-column="43" />
-          <folding>
-            <element signature="e#153#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/agents/a2c_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

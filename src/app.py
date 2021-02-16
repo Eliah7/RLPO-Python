@@ -8,11 +8,11 @@
 
 """
 
-from src.main.agents.a2c_agent import train_a2c
-from src.main.agents.dqn_agent import train_dqn
-from src.main.agents.ppo2_agent import train_ppo2
+from main.agents.a2c_agent import train_a2c
+from main.agents.dqn_agent import train_dqn
+from main.agents.ppo2_agent import train_ppo2
 from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
-from src.main.env.environment import Environment
+from main.env.environment import Environment
 import numpy as np
 import click
 

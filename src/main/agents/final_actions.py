@@ -8,8 +8,8 @@
 
 """
 from stable_baselines import DQN, A2C, PPO2
-from src.main.util.model_utils import evaluate, run_ensemble
-from src.main.env.environment import Environment
+from main.util.model_utils import evaluate, run_ensemble
+from main.env.environment import Environment
 from stable_baselines.common.vec_env import DummyVecEnv, VecCheckNan
 import time
 import click

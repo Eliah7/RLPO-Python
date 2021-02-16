@@ -10,10 +10,10 @@
 import gym
 from gym import spaces
 import numpy as np
-from src.main.env.data import *
-from src.main.util.binary_ops import *
-from src.main.util.java_utils import dlf_analyse
-from src.main.util.model_utils import *
+from main.env.data import *
+from main.util.binary_ops import *
+from main.util.java_utils import dlf_analyse
+from main.util.model_utils import *
 
 np.seterr(all='raise')
 
@@ -96,7 +96,9 @@ class Environment(gym.Env):
         power_values_from_dlf, _ = dlf_analyse(self.line_data, load_data_copy, grid_name=self.grid_name)
 
         power_values_from_dlf = np.array(power_values_from_dlf)
-        restored_load = np.sum(load_data_copy[:, 1][(load_data_copy[:, 3] == 1)] / np.sum(load_data_copy[:, 1])) * 100
+        load_data_1, line_data = get_data_from_csv(self.grid_name)
+
+        restored_load = np.sum(load_data_1[:, 1][(load_data_copy[:, 3] == 1)]) / (np.sum(load_data_1[:, 1]) + 0.001 ) * 100
         self.done = True
         reward=reward if self.action_type == 'discrete' else reward[0]
         return obs, reward, self.done, {"min" : power_values_from_dlf.min(),"max" : power_values_from_dlf.max(), "load": restored_load}

@@ -12,11 +12,11 @@
 # from stable_baselines.deepq.policies import MlpPolicy, CnnPolicy
 from stable_baselines.common.policies import MlpPolicy, LstmPolicy
 from stable_baselines import DQN, A2C
-from src.main.env.environment import Environment
+from main.env.environment import Environment
 # from stable_baselines.bench import Monitor
 # import numpy as np
-from src.main.util.graph_utils import *
-from src.main.util.model_utils import *
+from main.util.graph_utils import *
+from main.util.model_utils import *
 
 import time
 
@@ -24,8 +24,10 @@ def train_a2c(env, grid_name, train_steps=1000):
     log_dir = "./tensorboard/"
 
     gamma = 0
-    learning_rate = 0.0005
+    learning_rate = 0.005
     # # env = Monitor(env, "./logs")
+
+    
     model = A2C(MlpPolicy, env=env, _init_setup_model=False, verbose=1, tensorboard_log=log_dir, gamma=gamma, learning_rate=learning_rate)
     model.setup_model()
 

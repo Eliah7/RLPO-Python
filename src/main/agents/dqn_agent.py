@@ -10,9 +10,9 @@
 
 from stable_baselines.deepq.policies import MlpPolicy
 from stable_baselines import DQN, A2C
-from src.main.env.environment import Environment
-from src.main.util.graph_utils import *
-from src.main.util.model_utils import *
+from main.env.environment import Environment
+from main.util.graph_utils import *
+from main.util.model_utils import *
 import os
 
 import time

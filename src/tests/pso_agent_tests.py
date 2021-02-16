@@ -8,8 +8,8 @@
 
 """
 from unittest import TestCase
-from src.main.agents.pso_agent import *
-from src.main.env.environment import *
+from main.agents.pso_agent import *
+from main.env.environment import *
 
 class PSOAgentTests(TestCase):
 

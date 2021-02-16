@@ -9,8 +9,8 @@
 
 """
 from py4j.java_gateway import JavaGateway
-# from src.main.env.environment import *
-from src.main.util.model_utils import *
+# from main.env.environment import *
+from main.util.model_utils import *
 
 def dlf_analyse(line_data, load_data, grid_name="bus33"):
     gateway = JavaGateway()

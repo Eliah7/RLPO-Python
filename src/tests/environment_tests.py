@@ -9,7 +9,7 @@
 """
 
 from unittest import TestCase
-from src.main.env.environment import Environment
+from main.env.environment import Environment
 
 class TestEnvironment(TestCase):
     def testCreateEnvironment(self):

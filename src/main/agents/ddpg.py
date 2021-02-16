@@ -24,9 +24,9 @@ import datetime as dt
 from stable_baselines.common.policies import MlpPolicy
 from stable_baselines.common.vec_env import DummyVecEnv
 from stable_baselines import PPO2
-from src.main.util.graph_utils import *
-from src.main.util.model_utils import *
-from src.main.env.environment import Environment
+from main.util.graph_utils import *
+from main.util.model_utils import *
+from main.env.environment import Environment
 from stable_baselines.common.noise import NormalActionNoise, OrnsteinUhlenbeckActionNoise, AdaptiveParamNoiseSpec
 from stable_baselines import DDPG
 
